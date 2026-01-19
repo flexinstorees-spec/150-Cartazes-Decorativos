@@ -197,17 +197,17 @@ export default function Home() {
                 price: "R$ 19,00"
               }
             ].map((bonus, i) => (
-              <div key={i} className="bg-white rounded-3xl border-2 border-gray-100 p-6 shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+              <div key={i} className="bg-white rounded-3xl border-2 border-gray-100 p-6 shadow-sm hover:shadow-md transition-all relative overflow-hidden group text-center">
                 <div className="absolute top-4 right-4 bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-pulse">
                   Grátis
                 </div>
-                <div className="flex flex-col md:flex-row gap-6 items-center">
-                  <div className="w-full md:w-1/3 aspect-video md:aspect-square rounded-2xl overflow-hidden border border-gray-100 bg-gray-50">
-                    <img src={bonus.img} alt={bonus.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform" />
+                <div className="space-y-6">
+                  <div className="w-full rounded-2xl overflow-hidden border border-gray-100 bg-gray-50">
+                    <img src={bonus.img} alt={bonus.name} className="w-full h-auto object-contain group-hover:scale-105 transition-transform" />
                   </div>
-                  <div className="flex-1 space-y-2 text-center md:text-left">
+                  <div className="space-y-4">
                     <h3 className="text-xl font-bold text-gray-900">{bonus.name}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">{bonus.desc}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-sm mx-auto">{bonus.desc}</p>
                     <div className="pt-2">
                       <span className="text-gray-400 line-through text-sm">Valor Original: {bonus.price}</span>
                       <p className="text-brand-green font-bold">Hoje: R$ 0,00</p>
