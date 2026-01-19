@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { 
   Play, 
   ChevronRight, 
@@ -8,7 +8,8 @@ import {
   BookOpen, 
   CheckCircle2, 
   ChevronDown,
-  Star
+  Star,
+  Check
 } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import {
@@ -29,6 +30,42 @@ import learnIcon from "@assets/stock_images/happy_child_holding__5bdc9d4e.jpg";
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
   const [selectedIndex, setSelectedIndex] = useState(0);
+  const [showNotification, setShowNotification] = useState(false);
+  const [currentNotification, setCurrentNotification] = useState({ name: "", city: "" });
+
+  const buyers = [
+    { name: "Patrícia", city: "São Paulo" },
+    { name: "Mariana", city: "Rio de Janeiro" },
+    { name: "Luciana", city: "Curitiba" },
+    { name: "Beatriz", city: "Belo Horizonte" },
+    { name: "Fernanda", city: "Porto Alegre" },
+    { name: "Cláudia", city: "Salvador" },
+    { name: "Renata", city: "Fortaleza" },
+    { name: "Juliana", city: "Recife" },
+    { name: "Camila", city: "Goiânia" },
+    { name: "Aline", city: "Manaus" }
+  ];
+
+  useEffect(() => {
+    const showRandomNotification = () => {
+      const randomBuyer = buyers[Math.floor(Math.random() * buyers.length)];
+      setCurrentNotification(randomBuyer);
+      setShowNotification(true);
+      
+      setTimeout(() => {
+        setShowNotification(false);
+      }, 5000);
+    };
+
+    const interval = setInterval(() => {
+      showRandomNotification();
+    }, 12000);
+
+    // Initial delay
+    setTimeout(showRandomNotification, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   const onSelect = React.useCallback(() => {
     if (!emblaApi) return;
@@ -372,6 +409,27 @@ export default function Home() {
              Na nossa plataforma, desenvolvemos moldes de EVA que incentivam o artesanato e a decoração de forma lúdica e envolvente. Nosso compromisso é garantir qualidade e inovação, ajudando artesãos e professores a criarem de maneira eficaz e divertida.
            </div>
         </footer>
+      </div>
+
+      {/* Social Proof Notification */}
+      <div 
+        className={`fixed bottom-6 left-6 z-50 transition-all duration-500 transform ${
+          showNotification ? "translate-y-0 opacity-100" : "translate-y-12 opacity-0 pointer-events-none"
+        }`}
+      >
+        <div className="bg-[#4CAF50] text-white px-6 py-4 rounded-xl shadow-2xl flex items-center gap-4 min-w-[280px]">
+          <div className="bg-white/20 rounded-full p-2.5">
+            <Check className="w-6 h-6 text-white" />
+          </div>
+          <div className="flex flex-col">
+            <span className="font-bold text-lg leading-tight">
+              {currentNotification.name} acabou de comprar
+            </span>
+            <span className="text-white/90 text-sm">
+              5.000 Moldes de EVA
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   );
