@@ -75,9 +75,19 @@ export default function Home() {
     s.async = true;
     document.head.appendChild(s);
 
+    // UTMify SDK
+    const utmScript = document.createElement("script");
+    utmScript.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
+    utmScript.async = true;
+    utmScript.defer = true;
+    utmScript.setAttribute("data-utmify-prevent-xcod-sck", "");
+    utmScript.setAttribute("data-utmify-prevent-subids", "");
+    document.head.appendChild(utmScript);
+
     return () => {
       clearInterval(interval);
       document.head.removeChild(s);
+      document.head.removeChild(utmScript);
     };
   }, []);
 
