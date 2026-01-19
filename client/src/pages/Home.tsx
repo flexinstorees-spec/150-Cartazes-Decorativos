@@ -88,7 +88,7 @@ export default function Home() {
 
         {/* What You Will Receive Section */}
         <section className="py-12 space-y-8">
-          <h2 className="text-3xl font-bold text-center text-gray-900 font-display">
+          <h2 className="text-3xl font-black text-center text-gray-900 font-display">
             O Que Você Vai Receber
           </h2>
           <div className="grid gap-6">
@@ -133,7 +133,7 @@ export default function Home() {
         {/* Exclusive Bonuses Section */}
         <section className="py-12 space-y-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-gray-900 font-display">
+            <h2 className="text-3xl font-black text-gray-900 font-display">
               E ainda você recebe 5 Bônus Grátis:
             </h2>
           </div>
@@ -253,7 +253,7 @@ export default function Home() {
 
         {/* Testimonials Section */}
         <section className="py-12 space-y-8 bg-gray-50 -mx-4 px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-900 font-display">
+          <h2 className="text-3xl font-black text-center text-gray-900 font-display">
             Quem comprou, adorou!
           </h2>
           <div className="relative max-w-[280px] sm:max-w-xs mx-auto">
@@ -303,7 +303,7 @@ export default function Home() {
 
         {/* FAQ */}
         <section className="py-12">
-          <h2 className="text-2xl font-bold text-center mb-8">Perguntas Frequentes</h2>
+          <h2 className="text-2xl font-black text-center mb-8">Perguntas Frequentes</h2>
           <div className="bg-gray-50 rounded-3xl p-6 shadow-sm">
             <Accordion type="single" collapsible className="w-full space-y-4">
               <AccordionItem value="item-1" className="border-none">
