@@ -278,15 +278,6 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
 
-              <AccordionItem value="item-4" className="border-none">
-                <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
-                  Funciona para qualquer criança?
-                </AccordionTrigger>
-                <AccordionContent className="px-2 text-gray-600">
-                  Sim! O material foi desenvolvido para ser intuitivo e adaptável a diferentes idades e níveis de aprendizado.
-                </AccordionContent>
-              </AccordionItem>
-
               <AccordionItem value="item-5" className="border-none">
                 <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
                   Quais formas de pagamento são aceitas?
