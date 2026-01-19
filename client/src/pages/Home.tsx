@@ -213,30 +213,30 @@ export default function Home() {
             </h3>
 
             <div className="text-center mb-8">
-              <p className="text-gray-500 text-sm">De R$ 38,00 Por Apenas:</p>
-              <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 38,00</p>
+              <p className="text-gray-500 text-sm">De R$ 57,00 Por Apenas:</p>
+              <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 57,00</p>
               <p className="text-5xl font-bold text-brand-green mt-2">R$ 10,00</p>
             </div>
 
             <div className="space-y-4 mb-8">
-              <div className="flex items-center gap-3">
-                <div className="bg-brand-green rounded-full p-1">
-                  <CheckCircle2 className="w-4 h-4 text-white" />
+              {[
+                "5.000 Moldes de EVA",
+                "Certificado de Conclusão",
+                "+2.500 Moldes de Feltro",
+                "Lista de Fornecedores Baratos",
+                "Painéis Educativos para Sala de Aula",
+                "+100 Livros de Colorir",
+                "Suporte 24/7",
+                "Garantia de 7 Dias",
+                "Acesso Imediato"
+              ].map((benefit, i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <div className="bg-brand-green rounded-full p-1">
+                    <CheckCircle2 className="w-4 h-4 text-white" />
+                  </div>
+                  <span className="font-medium text-sm text-left">{benefit}</span>
                 </div>
-                <span className="font-medium">PALAVRA MÁGICA</span>
-              </div>
-              <div className="flex items-center gap-3">
-                 <div className="bg-brand-green rounded-full p-1">
-                  <CheckCircle2 className="w-4 h-4 text-white" />
-                </div>
-                <span className="font-medium">ACESSO IMEDIATO</span>
-              </div>
-              <div className="flex items-center gap-3">
-                 <div className="bg-brand-green rounded-full p-1">
-                  <CheckCircle2 className="w-4 h-4 text-white" />
-                </div>
-                <span className="font-medium">PRONTO PARA IMPRESSÃO</span>
-              </div>
+              ))}
             </div>
 
             <Button className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center gap-2">
