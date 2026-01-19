@@ -28,9 +28,28 @@ import learnIcon from "@assets/stock_images/happy_child_holding__5bdc9d4e.jpg";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  const onSelect = React.useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  React.useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+  }, [emblaApi, onSelect]);
 
   const scrollPrev = () => emblaApi && emblaApi.scrollPrev();
   const scrollNext = () => emblaApi && emblaApi.scrollNext();
+
+  const testimonials = [
+    "https://imgur.com/xEwLgHB.png",
+    "https://imgur.com/oCZzH1K.png",
+    "https://imgur.com/ICT11ze.png",
+    "https://imgur.com/6ZW38qv.png"
+  ];
 
   return (
     <div className="min-h-screen bg-white pb-20 font-sans">
@@ -231,21 +250,16 @@ export default function Home() {
           <h2 className="text-3xl font-bold text-center text-gray-900 font-display">
             Quem comprou, adorou!
           </h2>
-          <div className="relative max-w-sm mx-auto">
-            <div className="overflow-hidden rounded-2xl shadow-lg" ref={emblaRef}>
+          <div className="relative max-w-[280px] sm:max-w-xs mx-auto">
+            <div className="overflow-hidden rounded-3xl shadow-lg" ref={emblaRef}>
               <div className="flex">
-                {[
-                  "https://imgur.com/xEwLgHB.png",
-                  "https://imgur.com/oCZzH1K.png",
-                  "https://imgur.com/ICT11ze.png",
-                  "https://imgur.com/6ZW38qv.png"
-                ].map((src, index) => (
+                {testimonials.map((src, index) => (
                   <div className="flex-[0_0_100%] min-w-0" key={index}>
-                    <div className="relative bg-white">
+                    <div className="relative bg-white flex items-center justify-center p-2">
                       <img 
                         src={src} 
                         alt={`Depoimento ${index + 1}`} 
-                        className="w-full h-auto object-contain"
+                        className="w-full h-auto object-contain rounded-2xl"
                       />
                     </div>
                   </div>
@@ -255,16 +269,29 @@ export default function Home() {
             
             <button 
               onClick={scrollPrev}
-              className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center text-white transition-colors z-10"
+              className="absolute -left-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/10 hover:bg-black/20 rounded-full flex items-center justify-center text-gray-800 transition-colors z-10"
             >
               <ChevronLeft className="w-6 h-6" />
             </button>
             <button 
               onClick={scrollNext}
-              className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-black/50 rounded-full flex items-center justify-center text-white transition-colors z-10"
+              className="absolute -right-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/10 hover:bg-black/20 rounded-full flex items-center justify-center text-gray-800 transition-colors z-10"
             >
               <ChevronRight className="w-6 h-6" />
             </button>
+
+            {/* Pagination Dots */}
+            <div className="flex justify-center gap-2 mt-6">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => emblaApi?.scrollTo(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === selectedIndex ? "bg-brand-green w-4" : "bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
         </section>
 
