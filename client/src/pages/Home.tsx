@@ -230,7 +230,7 @@ export default function Home() {
                   <div className="bg-brand-green rounded-full p-1.5 shrink-0">
                     <CheckCircle2 className="w-5 h-5 text-white" />
                   </div>
-                  <span className="font-[650] text-base text-left uppercase tracking-tight text-gray-900 leading-tight">{benefit}</span>
+                  <span className="font-bold text-base text-left uppercase tracking-tight text-gray-900 leading-tight">{benefit}</span>
                 </div>
               ))}
             </div>
