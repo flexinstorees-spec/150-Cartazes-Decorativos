@@ -287,8 +287,13 @@ export default function Home() {
               ))}
             </div>
 
-            <Button className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center gap-2">
-              <span>👉</span> Comprar agora
+            <Button 
+              asChild
+              className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center gap-2"
+            >
+              <a href="https://checkout.moldesdeeva.site/VCCL1O8SCB17" target="_blank" rel="noopener noreferrer">
+                <span>👉</span> Comprar agora
+              </a>
             </Button>
           </div>
 
