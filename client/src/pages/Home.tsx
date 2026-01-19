@@ -43,7 +43,12 @@ export default function Home() {
     { name: "Renata", city: "Fortaleza" },
     { name: "Juliana", city: "Recife" },
     { name: "Camila", city: "Goiânia" },
-    { name: "Aline", city: "Manaus" }
+    { name: "Aline", city: "Manaus" },
+    { name: "Sandra", city: "Belém" },
+    { name: "Marta", city: "Natal" },
+    { name: "Bruna", city: "Vitória" },
+    { name: "Carla", city: "Florianópolis" },
+    { name: "Daniela", city: "Cuiabá" }
   ];
 
   useEffect(() => {
@@ -426,7 +431,7 @@ export default function Home() {
               {currentNotification.name} comprou agora
             </span>
             <span className="text-white/80 text-[10px] uppercase tracking-wider font-medium">
-              Acesso Liberado
+              5.000 Moldes de EVA
             </span>
           </div>
         </div>
