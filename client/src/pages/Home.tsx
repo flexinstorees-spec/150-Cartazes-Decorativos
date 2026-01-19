@@ -69,7 +69,16 @@ export default function Home() {
     // Initial delay
     setTimeout(showRandomNotification, 3000);
 
-    return () => clearInterval(interval);
+    // Smartplayer SDK
+    const s = document.createElement("script");
+    s.src = "https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js";
+    s.async = true;
+    document.head.appendChild(s);
+
+    return () => {
+      clearInterval(interval);
+      document.head.removeChild(s);
+    };
   }, []);
 
   const onSelect = React.useCallback(() => {
@@ -110,21 +119,25 @@ export default function Home() {
             Tudo organizado para apoiar quem trabalha com EVA, seja em sala de aula ou no artesanato.
           </p>
 
-          {/* Video Placeholder */}
-          <div className="relative mt-8 rounded-xl overflow-hidden shadow-xl aspect-[9/16] bg-black group cursor-pointer">
-             <img 
-               src={slide1} 
-               alt="Video Thumbnail" 
-               className="w-full h-full object-cover opacity-60 group-hover:opacity-70 transition-opacity"
-             />
-             <div className="absolute inset-0 flex items-center justify-center">
-               <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center border-2 border-white/50 group-hover:scale-110 transition-transform">
-                 <Play className="w-8 h-8 text-white fill-white ml-1" />
-               </div>
-             </div>
-             <div className="absolute top-1/2 left-0 right-0 text-center text-white/50 text-xs transform -translate-y-8">
-               Top Speed | 196 MPH
-             </div>
+          {/* VSL Video */}
+          <div className="mt-8">
+            <div id="ifr_696e608110d72bdc9f369c5a_wrapper" style={{ margin: "0 auto", width: "100%", maxWidth: "400px" }}>
+              <div style={{ position: "relative", padding: "177.77777777777777% 0 0 0" }} id="ifr_696e608110d72bdc9f369c5a_aspect">
+                <iframe 
+                  frameBorder="0" 
+                  allowFullScreen 
+                  src="about:blank" 
+                  id="ifr_696e608110d72bdc9f369c5a" 
+                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} 
+                  referrerPolicy="origin" 
+                  onLoad={(e) => {
+                    const iframe = e.currentTarget;
+                    iframe.onload = null;
+                    iframe.src = 'https://scripts.converteai.net/b3d1a520-ab98-4a63-bc66-0b40a4eb3ecb/players/696e608110d72bdc9f369c5a/v4/embed.html' + (window.location.search || '?') + '&vl=' + encodeURIComponent(window.location.href);
+                  }}
+                ></iframe>
+              </div>
+            </div>
           </div>
 
           {/* Button below Video */}
