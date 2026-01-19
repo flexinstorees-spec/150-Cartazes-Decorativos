@@ -204,8 +204,8 @@ export default function Home() {
               />
             </div>
 
-            <h3 className="text-xl font-bold text-center mb-4">
-              Atividade Palavra Mágica
+            <h3 className="text-xl font-bold text-center mb-4 uppercase">
+              5.000 Moldes de EVA
             </h3>
 
             <div className="text-center mb-8">
