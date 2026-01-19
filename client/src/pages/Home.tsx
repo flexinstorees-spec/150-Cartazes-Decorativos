@@ -126,6 +126,16 @@ export default function Home() {
                Top Speed | 196 MPH
              </div>
           </div>
+
+          {/* Button below Video */}
+          <div className="pt-4">
+            <Button 
+              onClick={() => document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' })}
+              className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-black text-xl py-8 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-3 uppercase tracking-tight"
+            >
+              <span>👉</span> Quero meus 5.000 Moldes
+            </Button>
+          </div>
         </header>
 
         {/* What You Will Receive Section */}
@@ -235,7 +245,7 @@ export default function Home() {
         </section>
 
         {/* Pricing Card */}
-        <section className="py-8">
+        <section id="pricing-section" className="py-8">
           <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden">
             {/* Logo Placeholder */}
             <div className="text-center mb-6">
@@ -393,6 +403,16 @@ export default function Home() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
+          </div>
+
+          {/* Button below FAQ */}
+          <div className="mt-10">
+            <Button 
+              onClick={() => document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' })}
+              className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-black text-xl py-8 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-3 uppercase tracking-tight"
+            >
+              <span>👉</span> Quero aproveitar a oferta agora
+            </Button>
           </div>
         </section>
 
