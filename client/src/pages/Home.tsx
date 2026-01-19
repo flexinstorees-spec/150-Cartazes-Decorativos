@@ -211,7 +211,7 @@ export default function Home() {
             <div className="text-center mb-8">
               <p className="text-gray-500 text-sm">De R$ 57,00 Por Apenas:</p>
               <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 57,00</p>
-              <p className="text-5xl font-black text-brand-green mt-2">R$ 10,00</p>
+              <p className="text-6xl font-black text-brand-green mt-2 tracking-tighter">R$ 10,00</p>
             </div>
 
             <div className="space-y-4 mb-8">
