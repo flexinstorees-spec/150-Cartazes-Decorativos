@@ -283,7 +283,7 @@ export default function Home() {
                   Quais formas de pagamento são aceitas?
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-gray-600">
-                  Aceitamos PIX, cartão de crédito e boleto bancário.
+                  Aceitamos PIX e cartão de crédito.
                 </AccordionContent>
               </AccordionItem>
 
