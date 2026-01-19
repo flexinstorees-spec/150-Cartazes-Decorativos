@@ -67,6 +67,50 @@ export default function Home() {
           </div>
         </header>
 
+        {/* What You Will Receive Section */}
+        <section className="py-12 space-y-8">
+          <h2 className="text-3xl font-bold text-center text-gray-900 font-display">
+            O Que Você Vai Receber
+          </h2>
+          <div className="grid gap-6">
+            <div className="bg-white p-6 rounded-2xl border-2 border-brand-purple shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-100 p-3 rounded-xl">
+                  <BookOpen className="w-6 h-6 text-brand-purple" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900">Moldes Prontos em PDF</h3>
+                  <p className="text-gray-600 text-sm">Mais de 2000 moldes de alta qualidade (animais, heróis, flores, natal, páscoa e mais).</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border-2 border-brand-yellow shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="bg-yellow-100 p-3 rounded-xl">
+                  <Printer className="w-6 h-6 text-yellow-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900">Pronto para Imprimir (A4)</h3>
+                  <p className="text-gray-600 text-sm">Arquivos formatados no tamanho exato para folha A4. É só imprimir, recortar e usar no EVA.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border-2 border-brand-green shadow-sm hover:shadow-md transition-shadow">
+              <div className="flex items-start gap-4">
+                <div className="bg-green-100 p-3 rounded-xl">
+                  <CheckCircle2 className="w-6 h-6 text-brand-green" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900">Acesso Vitalício</h3>
+                  <p className="text-gray-600 text-sm">Compre uma única vez e tenha acesso para sempre, com downloads ilimitados de todos os arquivos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* What Children Learn Section */}
         <section className="py-12 bg-gray-50 -mx-4 px-4 rounded-3xl my-8">
           <h2 className="text-xl font-bold text-center mb-8 uppercase tracking-wide text-gray-800">
