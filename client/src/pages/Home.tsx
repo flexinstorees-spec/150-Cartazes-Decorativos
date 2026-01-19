@@ -133,7 +133,7 @@ export default function Home() {
         {/* Exclusive Bonuses Section */}
         <section className="py-12 space-y-8">
           <div className="text-center">
-            <h2 className="text-3xl font-bold text-brand-green font-display">
+            <h2 className="text-3xl font-bold text-gray-900 font-display">
               E ainda você recebe 5 Bônus Grátis:
             </h2>
           </div>
