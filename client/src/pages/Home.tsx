@@ -170,7 +170,7 @@ export default function Home() {
                 price: "R$ 19,00"
               }
             ].map((bonus, i) => (
-              <div key={i} className="bg-white rounded-3xl border-2 border-brand-green/30 p-6 shadow-sm hover:shadow-md transition-all relative overflow-hidden group text-center">
+              <div key={i} className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-sm hover:shadow-md transition-all relative overflow-hidden group text-center">
                 <div className="absolute top-4 right-4 bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-pulse">
                   Grátis
                 </div>
