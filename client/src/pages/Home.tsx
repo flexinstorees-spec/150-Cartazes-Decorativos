@@ -158,7 +158,7 @@ export default function Home() {
               onClick={() => document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' })}
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-black text-lg md:text-xl py-7 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-2 uppercase tracking-tight px-4 leading-tight"
             >
-              <span className="shrink-0">👉</span> <span>Quero minhs 120 dinâmicas</span>
+              <span className="shrink-0">👉</span> <span>Quero minhas 120 dinâmicas</span>
             </Button>
           </div>
         </header>
@@ -346,7 +346,7 @@ export default function Home() {
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center gap-2"
             >
               <a href="https://checkout.moldesdeeva.site/VCCL1O8SCB17" target="_blank" rel="noopener noreferrer" data-testid="button-buy-now">
-                QUERO ACESSO AGORA
+                QUERO COMPRAR AGORA
               </a>
             </Button>
           </div>
