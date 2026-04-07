@@ -32,6 +32,10 @@ import rewardBonusImage from "@assets/Sistema_de_recompensas_escolar_alegre_1775
 import musicBonusImage from "@assets/Músicas_Matemáticas_para_aprender_brincando_1775600424569.png";
 import bingoBonusImage from "@assets/BAA61E29-7C63-4B41-AE4D-98561B652FBD_1775586050292.png";
 import unoBonusImage from "@assets/IMG_1161_1775585600425.png";
+import testimonialImage1 from "@assets/img_0363_(1)_1775602956061.png";
+import testimonialImage2 from "@assets/img_0363_(2)_1775602956061.png";
+import testimonialImage3 from "@assets/img_0363_(3)_1775602956061.png";
+import testimonialImage4 from "@assets/img_0363_(4)_1775602956061.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -112,10 +116,10 @@ export default function Home() {
   const scrollNext = () => emblaApi && emblaApi.scrollNext();
 
   const testimonials = [
-    "https://imgur.com/xEwLgHB.png",
-    "https://imgur.com/oCZzH1K.png",
-    "https://imgur.com/ICT11ze.png",
-    "https://imgur.com/6ZW38qv.png"
+    testimonialImage1,
+    testimonialImage2,
+    testimonialImage3,
+    testimonialImage4
   ];
 
   return (
