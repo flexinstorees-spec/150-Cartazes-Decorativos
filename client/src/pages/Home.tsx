@@ -31,7 +31,6 @@ import slide1 from "@assets/stock_images/kids_in_classroom_le_b8e756c7.jpg";
 import slide2 from "@assets/stock_images/kids_in_classroom_le_23e6cce6.jpg";
 import slide3 from "@assets/stock_images/kids_in_classroom_le_d60b13fe.jpg";
 import learnIcon from "@assets/stock_images/happy_child_holding__5bdc9d4e.jpg";
-import offerLogo from "@assets/image_1775569050541.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -300,15 +299,6 @@ export default function Home() {
         {/* Pricing Card */}
         <section id="pricing-section" className="py-8">
           <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden">
-            {/* Logo Placeholder */}
-            <div className="text-center mb-6">
-              <img 
-                src={offerLogo} 
-                alt="Logo Palavra Mágica" 
-                className="mx-auto w-full max-w-[240px] h-auto object-contain"
-              />
-            </div>
-
             <h3 className="text-2xl font-black text-center mb-4 text-gray-900 leading-tight" data-testid="text-offer-title">
               +120 Dinâmicas de Matemática para Educação Infantil
             </h3>
