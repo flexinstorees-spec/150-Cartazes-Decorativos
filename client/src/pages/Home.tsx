@@ -9,7 +9,12 @@ import {
   CheckCircle2, 
   ChevronDown,
   Star,
-  Check
+  Check,
+  Award,
+  Gift,
+  Music4,
+  Trophy,
+  Gamepad2
 } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import {
@@ -223,55 +228,71 @@ export default function Home() {
           <div className="grid gap-8">
             {[
               {
-                name: "Certificado de Conclusão",
-                desc: "Certificado digital para valorizar seu aprendizado e comprovar a conclusão do material.",
-                img: "https://imgur.com/4fdkVdn.png",
-                price: "R$ 47,00"
+                name: "Certificados de Conclusão para os Alunos",
+                desc: "Modelos prontos para premiar e motivar as crianças ao final das atividades.",
+                price: "R$ 47,00",
+                icon: Award,
+                iconBg: "bg-purple-100",
+                iconColor: "text-brand-purple"
               },
               {
-                name: "+2.500 Moldes de Feltro",
-                desc: "Uma coleção extra de moldes prontos para criar peças em feltro com mais variedade e criatividade.",
-                img: "https://imgur.com/x0PYYoQ.png",
-                price: "R$ 67,00"
+                name: "Sistema de Recompensas para Sala de Aula",
+                desc: "Cartões e incentivos simples para aumentar o engajamento e participação dos alunos.",
+                price: "R$ 67,00",
+                icon: Gift,
+                iconBg: "bg-yellow-100",
+                iconColor: "text-yellow-600"
               },
               {
-                name: "Lista de Fornecedores Baratos",
-                desc: "Indicações de fornecedores com bom custo-benefício para comprar materiais e economizar no dia a dia.",
-                img: "https://imgur.com/Vz1hwB6.png",
-                price: "R$ 27,00"
+                name: "Músicas Matemáticas para Aprender Brincando",
+                desc: "Áudios educativos para ensinar números e manter a turma envolvida durante as aulas.",
+                price: "R$ 27,00",
+                icon: Music4,
+                iconBg: "bg-pink-100",
+                iconColor: "text-pink-600"
               },
               {
-                name: "Painéis Educativos para Sala de Aula",
-                desc: "Ideias prontas de painéis educativos para decorar e apoiar o aprendizado em sala.",
-                img: "https://imgur.com/1JgtLqr.png",
-                price: "R$ 37,00"
+                name: "Super Bingo Matemático para Sala de Aula",
+                desc: "Uma dinâmica pronta e divertida para ensinar números e envolver toda a turma de forma leve e interativa.",
+                price: "R$ 37,00",
+                icon: Trophy,
+                iconBg: "bg-blue-100",
+                iconColor: "text-blue-600"
               },
               {
-                name: "+100 Livros de Colorir",
-                desc: "+100 livros de colorir para crianças, ideais para atividades educativas e coordenação motora.",
-                img: "https://imgur.com/ZKnnRYo.png",
-                price: "R$ 19,00"
+                name: "Desafio Uno Matemático",
+                desc: "Um jogo de cartas dinâmico e competitivo inspirado em jogos populares, ideal para trabalhar números, sequência e atenção com as crianças.",
+                price: "R$ 19,00",
+                icon: Gamepad2,
+                iconBg: "bg-green-100",
+                iconColor: "text-brand-green"
               }
-            ].map((bonus, i) => (
-              <div key={i} className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-sm hover:shadow-md transition-all relative overflow-hidden group text-center">
-                <div className="absolute top-4 right-4 bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-pulse">
-                  Grátis
-                </div>
-                <div className="space-y-6">
-                  <div className="w-full rounded-2xl overflow-hidden border border-gray-100 bg-gray-50">
-                    <img src={bonus.img} alt={bonus.name} className="w-full h-auto object-contain group-hover:scale-105 transition-transform" />
+            ].map((bonus, i) => {
+              const Icon = bonus.icon;
+
+              return (
+                <div key={i} className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-sm hover:shadow-md transition-all relative overflow-hidden group text-center">
+                  <div className="absolute top-4 right-4 bg-brand-green text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-pulse">
+                    Grátis
                   </div>
-                  <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-gray-900">{bonus.name}</h3>
-                    <p className="text-gray-600 text-sm leading-relaxed max-w-sm mx-auto">{bonus.desc}</p>
-                    <div className="pt-2">
-                      <span className="text-red-500 line-through text-sm">Valor Original: {bonus.price}</span>
-                      <p className="text-brand-green font-bold">Hoje: R$ 0,00</p>
+                  <div className="space-y-6">
+                    <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-[2rem] border border-brand-green/15 bg-gradient-to-br from-white via-green-50 to-emerald-100 shadow-sm group-hover:scale-105 transition-transform">
+                      <div className={`rounded-2xl p-4 ${bonus.iconBg}`}>
+                        <Icon className={`w-10 h-10 ${bonus.iconColor}`} />
+                      </div>
+                    </div>
+                    <div className="space-y-4">
+                      <h3 className="text-xl font-bold text-gray-900">{bonus.name}</h3>
+                      <p className="text-gray-600 text-sm leading-relaxed max-w-sm mx-auto">{bonus.desc}</p>
+                      <div className="pt-2">
+                        <span className="text-red-500 line-through text-sm">Valor Original: {bonus.price}</span>
+                        <p className="text-brand-green font-bold">Hoje: R$ 0,00</p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
@@ -299,12 +320,12 @@ export default function Home() {
 
             <div className="space-y-4 mb-8">
               {[
-                "5.000 Moldes de EVA",
-                "Certificado de Conclusão",
-                "+2.500 Moldes de Feltro",
-                "Lista de Fornecedores Baratos",
-                "Painéis Educativos para Sala de Aula",
-                "+100 Livros de Colorir",
+                "+120 Dinâmicas de Matemática",
+                "Certificados de Conclusão para os Alunos",
+                "Sistema de Recompensas para Sala de Aula",
+                "Músicas Matemáticas para Aprender Brincando",
+                "Super Bingo Matemático para Sala de Aula",
+                "Desafio Uno Matemático",
                 "Suporte 24/7",
                 "Garantia de 7 Dias",
                 "Acesso Imediato"
