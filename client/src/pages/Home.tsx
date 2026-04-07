@@ -31,6 +31,7 @@ import slide1 from "@assets/stock_images/kids_in_classroom_le_b8e756c7.jpg";
 import slide2 from "@assets/stock_images/kids_in_classroom_le_23e6cce6.jpg";
 import slide3 from "@assets/stock_images/kids_in_classroom_le_d60b13fe.jpg";
 import learnIcon from "@assets/stock_images/happy_child_holding__5bdc9d4e.jpg";
+import unoBonusImage from "@assets/IMG_1161_1775585600425.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -263,9 +264,7 @@ export default function Home() {
                 name: "Desafio Uno Matemático",
                 desc: "Um jogo de cartas dinâmico e competitivo inspirado em jogos populares, ideal para trabalhar números, sequência e atenção com as crianças.",
                 price: "R$ 19,00",
-                icon: Gamepad2,
-                iconBg: "bg-green-100",
-                iconColor: "text-brand-green"
+                image: unoBonusImage
               }
             ].map((bonus, i) => {
               const Icon = bonus.icon;
@@ -276,10 +275,18 @@ export default function Home() {
                     Grátis
                   </div>
                   <div className="space-y-6">
-                    <div className="mx-auto flex h-28 w-28 items-center justify-center rounded-[2rem] border border-brand-green/15 bg-gradient-to-br from-white via-green-50 to-emerald-100 shadow-sm group-hover:scale-105 transition-transform">
-                      <div className={`rounded-2xl p-4 ${bonus.iconBg}`}>
-                        <Icon className={`w-10 h-10 ${bonus.iconColor}`} />
-                      </div>
+                    <div className="mx-auto flex h-28 w-28 items-center justify-center overflow-hidden rounded-[2rem] border border-brand-green/15 bg-gradient-to-br from-white via-green-50 to-emerald-100 shadow-sm group-hover:scale-105 transition-transform">
+                      {bonus.image ? (
+                        <img
+                          src={bonus.image}
+                          alt={bonus.name}
+                          className="h-full w-full object-cover"
+                        />
+                      ) : (
+                        <div className={`rounded-2xl p-4 ${bonus.iconBg}`}>
+                          <Icon className={`w-10 h-10 ${bonus.iconColor}`} />
+                        </div>
+                      )}
                     </div>
                     <div className="space-y-4">
                       <h3 className="text-xl font-bold text-gray-900">{bonus.name}</h3>
