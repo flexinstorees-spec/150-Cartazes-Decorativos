@@ -308,33 +308,50 @@ export default function Home() {
               />
             </div>
 
-            <h3 className="text-xl font-bold text-center mb-4 uppercase">
-              5.000 Moldes de EVA
+            <h3 className="text-2xl font-black text-center mb-4 text-gray-900 leading-tight" data-testid="text-offer-title">
+              +120 Dinâmicas de Matemática para Educação Infantil
             </h3>
 
-            <div className="text-center mb-8">
-              <p className="text-gray-500 text-sm">De R$ 57,00 Por Apenas:</p>
+            <div className="text-center mb-6">
+              <p className="text-gray-500 text-sm" data-testid="text-offer-price-label">De R$ 57,00 por apenas:</p>
               <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 57,00</p>
-              <p className="text-6xl font-black text-brand-green mt-2 tracking-tighter">R$ 10,00</p>
+              <p className="text-6xl font-black text-brand-green mt-2 tracking-tighter" data-testid="text-offer-price">R$ 10,00</p>
             </div>
 
-            <div className="space-y-4 mb-8">
+            <p className="text-center text-sm font-semibold text-gray-700 mb-6" data-testid="text-offer-access-intro">
+              Você recebe acesso imediato a:
+            </p>
+
+            <div className="space-y-4 mb-6">
               {[
-                "+120 Dinâmicas de Matemática",
+                "+120 Dinâmicas de Matemática (Prontas para Aplicar)",
                 "Certificados de Conclusão para os Alunos",
                 "Sistema de Recompensas para Sala de Aula",
                 "Músicas Matemáticas para Aprender Brincando",
                 "Super Bingo Matemático para Sala de Aula",
-                "Desafio Uno Matemático",
-                "Suporte 24/7",
-                "Garantia de 7 Dias",
-                "Acesso Imediato"
+                "Desafio das Cartas Matemáticas"
               ].map((benefit, i) => (
-                <div key={i} className="flex items-center gap-3">
-                  <div className="bg-brand-green rounded-full p-1.5 shrink-0">
+                <div key={i} className="flex items-start gap-3">
+                  <div className="bg-brand-green rounded-full p-1.5 shrink-0 mt-0.5">
                     <CheckCircle2 className="w-5 h-5 text-white" />
                   </div>
-                  <span className="font-bold text-base text-left uppercase tracking-tight text-gray-900 leading-tight">{benefit}</span>
+                  <span className="font-bold text-base text-left tracking-tight text-gray-900 leading-tight">{benefit}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="mb-8 space-y-4 border-t border-dashed border-brand-green/30 pt-6">
+              <p className="text-center text-sm font-semibold uppercase tracking-[0.18em] text-brand-green">E ainda:</p>
+              {[
+                "Suporte 24/7",
+                "Garantia de 7 Dias",
+                "Acesso Imediato após a compra"
+              ].map((benefit, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <div className="bg-green-100 rounded-full p-1.5 shrink-0 mt-0.5">
+                    <Check className="w-5 h-5 text-brand-green" />
+                  </div>
+                  <span className="font-semibold text-base text-left text-gray-800 leading-tight">{benefit}</span>
                 </div>
               ))}
             </div>
@@ -343,8 +360,8 @@ export default function Home() {
               asChild
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center gap-2"
             >
-              <a href="https://checkout.moldesdeeva.site/VCCL1O8SCB17" target="_blank" rel="noopener noreferrer">
-                <span>👉</span> Comprar agora
+              <a href="https://checkout.moldesdeeva.site/VCCL1O8SCB17" target="_blank" rel="noopener noreferrer" data-testid="button-buy-now">
+                QUERO ACESSO AGORA
               </a>
             </Button>
           </div>
