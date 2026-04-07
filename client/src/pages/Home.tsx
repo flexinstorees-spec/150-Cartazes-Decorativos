@@ -31,7 +31,6 @@ import slide1 from "@assets/stock_images/kids_in_classroom_le_b8e756c7.jpg";
 import slide2 from "@assets/stock_images/kids_in_classroom_le_23e6cce6.jpg";
 import slide3 from "@assets/stock_images/kids_in_classroom_le_d60b13fe.jpg";
 import learnIcon from "@assets/stock_images/happy_child_holding__5bdc9d4e.jpg";
-import offerLogo from "@assets/image_1775569050541.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -302,7 +301,7 @@ export default function Home() {
           <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden">
             <div className="text-center mb-6">
               <img 
-                src={offerLogo} 
+                src="https://i.imgur.com/vvdA6t1.png" 
                 alt="Logo 120 Dinâmicas de Matemática" 
                 className="mx-auto w-full max-w-[220px] h-auto object-contain"
               />
