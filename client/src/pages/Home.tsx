@@ -543,7 +543,7 @@ export default function Home() {
               {currentNotification.name} comprou agora
             </span>
             <span className="text-white/80 text-[10px] uppercase tracking-wider font-medium">
-              5.000 Moldes de EVA
+              +120 Dinâmicas de Matemática
             </span>
           </div>
         </div>
