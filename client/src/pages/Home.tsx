@@ -302,7 +302,7 @@ export default function Home() {
             {/* Logo Placeholder */}
             <div className="text-center mb-6">
               <img 
-                src="https://imgur.com/4maud8T.png" 
+                src="https://imgur.com/QZyzJN2.png" 
                 alt="Logo Palavra Mágica" 
                 className="mx-auto w-full max-w-[240px] h-auto object-contain"
               />
