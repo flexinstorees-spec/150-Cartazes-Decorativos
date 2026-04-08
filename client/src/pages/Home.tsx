@@ -79,11 +79,21 @@ export default function Home() {
     // Initial delay
     setTimeout(showRandomNotification, 3000);
 
-    // Smartplayer SDK
-    const s = document.createElement("script");
-    s.src = "https://scripts.converteai.net/lib/js/smartplayer-wc/v4/sdk.js";
-    s.async = true;
-    document.head.appendChild(s);
+    // Wistia SDK
+    const wistiaBaseScript = document.createElement("script");
+    wistiaBaseScript.src = "https://fast.wistia.com/player.js";
+    wistiaBaseScript.async = true;
+    document.head.appendChild(wistiaBaseScript);
+
+    const wistiaEmbedScript = document.createElement("script");
+    wistiaEmbedScript.src = "https://fast.wistia.com/embed/sqefiu1vgr.js";
+    wistiaEmbedScript.async = true;
+    wistiaEmbedScript.type = "module";
+    document.head.appendChild(wistiaEmbedScript);
+
+    const wistiaStyle = document.createElement("style");
+    wistiaStyle.textContent = "wistia-player[media-id='sqefiu1vgr']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/sqefiu1vgr/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }";
+    document.head.appendChild(wistiaStyle);
 
     // UTMify SDK
     const utmScript = document.createElement("script");
@@ -96,7 +106,9 @@ export default function Home() {
 
     return () => {
       clearInterval(interval);
-      document.head.removeChild(s);
+      document.head.removeChild(wistiaBaseScript);
+      document.head.removeChild(wistiaEmbedScript);
+      document.head.removeChild(wistiaStyle);
       document.head.removeChild(utmScript);
     };
   }, []);
@@ -142,17 +154,11 @@ export default function Home() {
 
           {/* VSL Video */}
           <div className="mt-8">
-            <div id="ifr_696e608110d72bdc9f369c5a_wrapper" style={{ margin: "0 auto", width: "100%", maxWidth: "400px" }}>
-              <div style={{ position: "relative", padding: "177.77777777777777% 0 0 0" }} id="ifr_696e608110d72bdc9f369c5a_aspect">
-                <iframe 
-                  frameBorder="0" 
-                  allowFullScreen 
-                  src="https://scripts.converteai.net/b3d1a520-ab98-4a63-bc66-0b40a4eb3ecb/players/696e608110d72bdc9f369c5a/v4/embed.html"
-                  id="ifr_696e608110d72bdc9f369c5a" 
-                  style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }} 
-                  referrerPolicy="origin"
-                ></iframe>
-              </div>
+            <div style={{ margin: "0 auto", width: "100%", maxWidth: "400px" }}>
+              {React.createElement("wistia-player", {
+                "media-id": "sqefiu1vgr",
+                aspect: "0.5625"
+              })}
             </div>
           </div>
 
