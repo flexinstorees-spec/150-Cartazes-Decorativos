@@ -95,21 +95,11 @@ export default function Home() {
     wistiaStyle.textContent = "wistia-player[media-id='sqefiu1vgr']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/sqefiu1vgr/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }";
     document.head.appendChild(wistiaStyle);
 
-    // UTMify SDK
-    const utmScript = document.createElement("script");
-    utmScript.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
-    utmScript.async = true;
-    utmScript.defer = true;
-    utmScript.setAttribute("data-utmify-prevent-xcod-sck", "");
-    utmScript.setAttribute("data-utmify-prevent-subids", "");
-    document.head.appendChild(utmScript);
-
     return () => {
       clearInterval(interval);
       document.head.removeChild(wistiaBaseScript);
       document.head.removeChild(wistiaEmbedScript);
       document.head.removeChild(wistiaStyle);
-      document.head.removeChild(utmScript);
     };
   }, []);
 
