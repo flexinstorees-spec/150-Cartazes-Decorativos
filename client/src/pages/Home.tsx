@@ -552,7 +552,7 @@ export default function Home() {
             <span className="font-bold text-sm leading-tight truncate">
               {currentNotification.name} comprou agora
             </span>
-            <span className="text-white/80 text-[10px] uppercase tracking-wider font-medium">
+            <span className="text-white/80 text-[10px] uppercase tracking-wider font-bold">
               +120 Dinâmicas de Matemática
             </span>
           </div>
