@@ -416,7 +416,7 @@ export default function Home() {
           {/* Main Offer Card */}
           <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden">
             <div className="absolute top-0 inset-x-0 h-2 bg-brand-green"></div>
-            <div className="text-center mb-6 mt-2">
+            <div className="text-center mb-2 mt-2">
               <img 
                 src={newOfferLogo}
                 alt="Logo 120 Dinâmicas de Matemática + Bônus" 
