@@ -44,6 +44,7 @@ import dynamicsImage5 from "@assets/5_1775690645263.png";
 import dynamicsImage6 from "@assets/6_1775690645263.png";
 import dynamicsImage7 from "@assets/7_1775690645263.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
+import basicOfferLogo from "@assets/Imagem_PNG_1775775056215.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -422,8 +423,17 @@ export default function Home() {
 
           {/* Basic Offer Card */}
           <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-md max-w-sm mx-auto relative overflow-hidden mt-6">
+            <div className="absolute top-0 inset-x-0 h-2 bg-brand-green"></div>
+            <div className="text-center mb-6 mt-2">
+              <img 
+                src={basicOfferLogo}
+                alt="Logo 120 Dinâmicas de Matemática" 
+                className="mx-auto w-full max-w-[280px] h-auto object-contain drop-shadow-md"
+              />
+            </div>
+
             <h3 className="text-xl font-black text-center mb-4 text-gray-700 leading-tight" data-testid="text-offer-title-basic">
-              Apenas as 120 Dinâmicas (Sem Bônus)
+              Apenas as 120 Dinâmicas<br/><span className="text-sm font-medium text-gray-500">(Sem Bônus)</span>
             </h3>
 
             <div className="text-center mb-6">
