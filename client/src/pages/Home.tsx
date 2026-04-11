@@ -44,6 +44,10 @@ import dynamicsImage4 from "@assets/4_1775690645262.png";
 import dynamicsImage5 from "@assets/5_1775690645263.png";
 import dynamicsImage6 from "@assets/6_1775690645263.png";
 import dynamicsImage7 from "@assets/7_1775690645263.png";
+import dynamicsImage8 from "@assets/10_1775867563169.png";
+import dynamicsImage9 from "@assets/11_1775867563170.png";
+import dynamicsImage10 from "@assets/8_1775867563170.png";
+import dynamicsImage11 from "@assets/9_1775867563170.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
 import basicOfferLogo from "@assets/Imagem_PNG_1775775056215.png";
 
@@ -153,7 +157,11 @@ export default function Home() {
     { image: dynamicsImage4, title: "Número Secreto" },
     { image: dynamicsImage5, title: "Roleta da Soma" },
     { image: dynamicsImage6, title: "Sonho da Tabuada" },
-    { image: dynamicsImage7, title: "Sorvete da Matemática" }
+    { image: dynamicsImage7, title: "Sorvete da Matemática" },
+    { image: dynamicsImage8, title: "Bingo da Subtração" },
+    { image: dynamicsImage9, title: "Roleta das Operações" },
+    { image: dynamicsImage10, title: "Eu Tenho, Quem Tem?" },
+    { image: dynamicsImage11, title: "Ditado da Adição" }
   ];
 
   return (
