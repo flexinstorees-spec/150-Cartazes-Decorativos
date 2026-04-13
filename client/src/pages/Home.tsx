@@ -154,7 +154,7 @@ export default function Home() {
 
       <div className="max-w-md mx-auto px-4 sm:max-w-lg md:max-w-2xl">
         {/* Hero Section */}
-        <header className="py-8 text-center space-y-4">
+        <header className="py-4 text-center space-y-2">
           <h1 
             className="text-[30px] leading-[36px] md:text-[60px] md:leading-[60px] font-bold text-gray-900 tracking-tight" 
             style={{ fontFamily: "'Poppins', sans-serif" }}
@@ -163,23 +163,23 @@ export default function Home() {
             <span className="font-bold drop-shadow-sm" style={{ color: "#1d5336" }}>+120 Dinâmicas de Matemática</span>{" "}
             Prontas para Imprimir
           </h1>
-          <p className="text-gray-600 text-lg leading-relaxed mt-6" data-testid="text-subheadline">
+          <p className="text-gray-600 text-lg leading-relaxed mt-2" data-testid="text-subheadline">
             Tudo pronto para ajudar professoras a ensinar matemática de forma divertida, prática e sem complicação.
           </p>
 
           {/* VSL Image */}
-          <div className="mt-8">
+          <div className="mt-0">
             <div style={{ margin: "0 auto", width: "100%", maxWidth: "500px" }}>
               <img 
                 src={apostilaImage} 
                 alt="Apostila 120 Dinâmicas de Matemática" 
-                className="w-full h-auto object-contain drop-shadow-xl"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
 
-          {/* Button below Video */}
-          <div className="pt-4">
+          {/* Button below Image */}
+          <div className="pt-0">
             <Button 
               onClick={() => document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' })}
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-black text-lg md:text-xl py-7 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-2 uppercase tracking-tight px-4 leading-tight"
