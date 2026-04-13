@@ -50,6 +50,7 @@ import dynamicsImage10 from "@assets/8_1775867563170.png";
 import dynamicsImage11 from "@assets/9_1775867563170.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
 import basicOfferLogo from "@assets/Imagem_PNG_1775775056215.png";
+import headlineImage from "@assets/image_1776101843850.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -173,11 +174,15 @@ export default function Home() {
       <div className="max-w-md mx-auto px-4 sm:max-w-lg md:max-w-2xl">
         {/* Hero Section */}
         <header className="py-8 text-center space-y-4">
-          <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 leading-tight" data-testid="text-headline">
-            <span className="font-black" style={{ color: "#1d5336" }}>+120 Dinâmicas de Matemática</span>{" "}
-            Prontas para Imprimir
-          </h1>
-          <p className="text-gray-600 text-lg leading-relaxed" data-testid="text-subheadline">
+          <div className="mx-auto w-full max-w-[550px] mb-2 px-2">
+            <img 
+              src={headlineImage} 
+              alt="120 Dinâmicas Interativas para Educação Infantil + BÔNUS" 
+              className="w-full h-auto object-contain drop-shadow-sm"
+              data-testid="img-headline"
+            />
+          </div>
+          <p className="text-gray-600 text-lg leading-relaxed px-2" data-testid="text-subheadline">
             Tudo pronto para ajudar professoras a ensinar matemática de forma divertida, prática e sem complicação.
           </p>
 
