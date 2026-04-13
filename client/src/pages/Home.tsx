@@ -295,6 +295,56 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Testimonials Section */}
+        <section className="py-12 space-y-8 bg-gray-50 -mx-4 px-4">
+          <h2 className="text-3xl font-black text-center text-gray-900 font-display">
+            Quem comprou, adorou!
+          </h2>
+          <div className="relative max-w-[280px] sm:max-w-xs mx-auto">
+            <div className="overflow-hidden rounded-3xl shadow-lg" ref={emblaRef}>
+              <div className="flex">
+                {testimonials.map((src, index) => (
+                  <div className="flex-[0_0_100%] min-w-0" key={index}>
+                    <div className="relative bg-white flex items-center justify-center p-2">
+                      <img 
+                        src={src} 
+                        alt={`Depoimento ${index + 1}`} 
+                        className="w-full h-auto object-contain rounded-2xl"
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <button 
+              onClick={scrollPrev}
+              className="absolute -left-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/10 hover:bg-black/20 rounded-full flex items-center justify-center text-gray-800 transition-colors z-10"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button 
+              onClick={scrollNext}
+              className="absolute -right-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/10 hover:bg-black/20 rounded-full flex items-center justify-center text-gray-800 transition-colors z-10"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
+
+            {/* Pagination Dots */}
+            <div className="flex justify-center gap-2 mt-6">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => emblaApi?.scrollTo(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${
+                    index === selectedIndex ? "bg-brand-green w-4" : "bg-gray-300"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* Exclusive Bonuses Section */}
         <section className="py-12 space-y-8">
           <div className="text-center">
@@ -437,56 +487,6 @@ export default function Home() {
             <p className="text-gray-900 font-bold text-sm leading-snug">
               Após a compra, você recebe acesso ao Material em PDF diretamente no seu E-mail
             </p>
-          </div>
-        </section>
-
-        {/* Testimonials Section */}
-        <section className="py-12 space-y-8 bg-gray-50 -mx-4 px-4">
-          <h2 className="text-3xl font-black text-center text-gray-900 font-display">
-            Quem comprou, adorou!
-          </h2>
-          <div className="relative max-w-[280px] sm:max-w-xs mx-auto">
-            <div className="overflow-hidden rounded-3xl shadow-lg" ref={emblaRef}>
-              <div className="flex">
-                {testimonials.map((src, index) => (
-                  <div className="flex-[0_0_100%] min-w-0" key={index}>
-                    <div className="relative bg-white flex items-center justify-center p-2">
-                      <img 
-                        src={src} 
-                        alt={`Depoimento ${index + 1}`} 
-                        className="w-full h-auto object-contain rounded-2xl"
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <button 
-              onClick={scrollPrev}
-              className="absolute -left-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/10 hover:bg-black/20 rounded-full flex items-center justify-center text-gray-800 transition-colors z-10"
-            >
-              <ChevronLeft className="w-6 h-6" />
-            </button>
-            <button 
-              onClick={scrollNext}
-              className="absolute -right-12 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/10 hover:bg-black/20 rounded-full flex items-center justify-center text-gray-800 transition-colors z-10"
-            >
-              <ChevronRight className="w-6 h-6" />
-            </button>
-
-            {/* Pagination Dots */}
-            <div className="flex justify-center gap-2 mt-6">
-              {testimonials.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => emblaApi?.scrollTo(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === selectedIndex ? "bg-brand-green w-4" : "bg-gray-300"
-                  }`}
-                />
-              ))}
-            </div>
           </div>
         </section>
 
