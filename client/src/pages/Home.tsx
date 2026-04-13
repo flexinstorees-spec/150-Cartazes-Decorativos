@@ -50,6 +50,7 @@ import dynamicsImage10 from "@assets/8_1775867563170.png";
 import dynamicsImage11 from "@assets/9_1775867563170.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
 import basicOfferLogo from "@assets/Imagem_PNG_1775775056215.png";
+import apostilaImage from "@assets/APOSTILA_3000X3000_1776120740773.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -94,27 +95,8 @@ export default function Home() {
     // Initial delay
     setTimeout(showRandomNotification, 3000);
 
-    // Wistia SDK
-    const wistiaBaseScript = document.createElement("script");
-    wistiaBaseScript.src = "https://fast.wistia.com/player.js";
-    wistiaBaseScript.async = true;
-    document.head.appendChild(wistiaBaseScript);
-
-    const wistiaEmbedScript = document.createElement("script");
-    wistiaEmbedScript.src = "https://fast.wistia.com/embed/sqefiu1vgr.js";
-    wistiaEmbedScript.async = true;
-    wistiaEmbedScript.type = "module";
-    document.head.appendChild(wistiaEmbedScript);
-
-    const wistiaStyle = document.createElement("style");
-    wistiaStyle.textContent = "wistia-player[media-id='sqefiu1vgr']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/sqefiu1vgr/swatch'); display: block; filter: blur(5px); padding-top:177.78%; }";
-    document.head.appendChild(wistiaStyle);
-
     return () => {
       clearInterval(interval);
-      document.head.removeChild(wistiaBaseScript);
-      document.head.removeChild(wistiaEmbedScript);
-      document.head.removeChild(wistiaStyle);
     };
   }, []);
 
@@ -185,13 +167,14 @@ export default function Home() {
             Tudo pronto para ajudar professoras a ensinar matemática de forma divertida, prática e sem complicação.
           </p>
 
-          {/* VSL Video */}
+          {/* VSL Image */}
           <div className="mt-8">
-            <div style={{ margin: "0 auto", width: "100%", maxWidth: "400px" }}>
-              {React.createElement("wistia-player", {
-                "media-id": "sqefiu1vgr",
-                aspect: "0.5625"
-              })}
+            <div style={{ margin: "0 auto", width: "100%", maxWidth: "500px" }}>
+              <img 
+                src={apostilaImage} 
+                alt="Apostila 120 Dinâmicas de Matemática" 
+                className="w-full h-auto object-contain drop-shadow-xl"
+              />
             </div>
           </div>
 
