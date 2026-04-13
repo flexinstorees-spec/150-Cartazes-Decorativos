@@ -174,7 +174,7 @@ export default function Home() {
         {/* Hero Section */}
         <header className="py-8 text-center space-y-4">
           <h1 
-            className="text-[60px] font-bold text-gray-900 leading-[60px] tracking-tight" 
+            className="text-[30px] leading-[36px] md:text-[60px] md:leading-[60px] font-bold text-gray-900 tracking-tight" 
             style={{ fontFamily: "'Poppins', sans-serif" }}
             data-testid="text-headline"
           >
