@@ -58,6 +58,7 @@ export default function Home() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [showNotification, setShowNotification] = useState(false);
   const [currentNotification, setCurrentNotification] = useState({ name: "", city: "" });
+  const [showDiscountPopup, setShowDiscountPopup] = useState(false);
 
   const buyers = [
     { name: "Patrícia", city: "São Paulo" },
@@ -177,9 +178,12 @@ export default function Home() {
           </div>
 
           {/* Button below Image */}
-          <div className="w-full relative z-20 -mt-10">
+          <div className="pt-0">
             <Button 
-              onClick={() => document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={(e) => {
+                e.preventDefault();
+                setShowDiscountPopup(true);
+              }}
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-black text-lg md:text-xl py-7 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-2 uppercase tracking-tight px-4 leading-tight"
             >
               <span className="shrink-0">👉</span> <span>Quero minhas 120 dinâmicas</span>
@@ -404,63 +408,7 @@ export default function Home() {
 
         {/* Pricing Card */}
         <section id="pricing-section" className="py-8 space-y-8">
-          {/* Base Offer Card - 27,00 */}
-          <div className="bg-white rounded-3xl border-2 border-brand-yellow p-6 shadow-md max-w-sm mx-auto relative overflow-hidden opacity-90 hover:opacity-100 transition-opacity">
-            <div className="absolute top-0 inset-x-0 h-2 bg-brand-yellow"></div>
-            <div className="text-center mb-2 mt-2">
-              <img 
-                src={basicOfferLogo}
-                alt="Logo 120 Dinâmicas de Matemática Básico" 
-                className="mx-auto w-full max-w-[240px] h-auto object-contain drop-shadow-sm"
-              />
-            </div>
-
-            <h3 className="text-xl font-bold text-center mb-4 text-gray-800 leading-tight">
-              APENAS AS DINÂMICAS:
-            </h3>
-
-            <div className="text-center mb-6">
-              <p className="text-4xl font-black text-gray-800 mt-2 tracking-tighter">R$ 27,00</p>
-            </div>
-
-            <p className="text-center text-sm font-medium text-gray-600 mb-6">
-              Você recebe acesso apenas a:
-            </p>
-
-            <div className="space-y-4 mb-8">
-              {[
-                "+120 Dinâmicas de Matemática",
-                "Garantia de 7 Dias",
-                "Acesso Imediato após a compra"
-              ].map((benefit, i) => (
-                <div key={i} className="flex items-start gap-3">
-                  <div className="bg-brand-yellow rounded-full p-1 shrink-0 mt-0.5">
-                    <Check className="w-4 h-4 text-white" />
-                  </div>
-                  <span className="font-medium text-sm text-left text-gray-700">{benefit}</span>
-                </div>
-              ))}
-              
-              <div className="flex items-start gap-3 opacity-40">
-                <div className="bg-gray-200 rounded-full p-1 shrink-0 mt-0.5">
-                  <X className="w-4 h-4 text-gray-500" />
-                </div>
-                <span className="font-medium text-sm text-left text-gray-500 line-through">Sem os 5 Bônus Exclusivos</span>
-              </div>
-            </div>
-
-            <Button 
-              asChild
-              variant="outline"
-              className="w-full border-2 border-brand-yellow text-brand-yellow hover:bg-brand-yellow hover:text-white font-bold text-base py-5 rounded-xl transition-all"
-            >
-              <a href="https://pay.wiapy.com/15bX2zL9xM" target="_blank" rel="noopener noreferrer">
-                QUERO APENAS AS DINÂMICAS
-              </a>
-            </Button>
-          </div>
-
-          {/* Main Offer Card */}
+          {/* Main Offer Card - 10,00 */}
           <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden transform scale-105 z-10">
             <div className="absolute top-4 right-4 bg-brand-red text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-bounce shadow-md">
               82% OFF
@@ -475,7 +423,7 @@ export default function Home() {
             </div>
 
             <h3 className="text-2xl font-black text-center mb-4 text-gray-900 leading-tight" data-testid="text-offer-title-main">
-              OFERTA COMPLETA:
+              OFERTA BÁSICA:
             </h3>
 
             <div className="text-center mb-6">
@@ -485,6 +433,64 @@ export default function Home() {
             </div>
 
             <p className="text-center text-sm font-semibold text-gray-700 mb-6" data-testid="text-offer-access-intro-main">
+              Você recebe acesso apenas a:
+            </p>
+
+            <div className="space-y-4 mb-8">
+              {[
+                "+120 Dinâmicas de Matemática",
+                "Garantia de 7 Dias",
+                "Acesso Imediato após a compra"
+              ].map((benefit, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <div className="bg-brand-green rounded-full p-1.5 shrink-0 mt-0.5">
+                    <CheckCircle2 className="w-5 h-5 text-white" />
+                  </div>
+                  <span className="font-bold text-base text-left tracking-tight text-gray-900 leading-tight">{benefit}</span>
+                </div>
+              ))}
+              
+              <div className="flex items-start gap-3 opacity-40">
+                <div className="bg-gray-200 rounded-full p-1 shrink-0 mt-0.5">
+                  <X className="w-4 h-4 text-gray-500" />
+                </div>
+                <span className="font-medium text-sm text-left text-gray-500 line-through">Sem os 5 Bônus Exclusivos</span>
+              </div>
+            </div>
+
+            <Button 
+              onClick={(e) => {
+                e.preventDefault();
+                setShowDiscountPopup(true);
+              }}
+              className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center gap-2"
+            >
+              <span data-testid="button-buy-now-main">
+                QUERO A OFERTA BÁSICA
+              </span>
+            </Button>
+          </div>
+
+          {/* Premium Offer Card - 27,00 */}
+          <div className="bg-white rounded-3xl border-2 border-brand-yellow p-6 shadow-md max-w-sm mx-auto relative overflow-hidden opacity-90 hover:opacity-100 transition-opacity mt-8">
+            <div className="absolute top-0 inset-x-0 h-2 bg-brand-yellow"></div>
+            <div className="text-center mb-2 mt-2">
+              <img 
+                src={newOfferLogo}
+                alt="Logo 120 Dinâmicas de Matemática + Bônus" 
+                className="mx-auto w-full max-w-[280px] h-auto object-contain drop-shadow-md"
+              />
+            </div>
+
+            <h3 className="text-xl font-bold text-center mb-4 text-gray-800 leading-tight">
+              OFERTA COMPLETA VIP:
+            </h3>
+
+            <div className="text-center mb-6">
+              <p className="text-4xl font-black text-gray-800 mt-2 tracking-tighter">R$ 27,00</p>
+            </div>
+
+            <p className="text-center text-sm font-medium text-gray-600 mb-6">
               Você recebe acesso imediato a:
             </p>
 
@@ -496,25 +502,26 @@ export default function Home() {
                 "Músicas Matemáticas para Aprender Brincando",
                 "Super Bingo Matemático para Sala de Aula",
                 "Desafio das Cartas Matemáticas",
-                "Suporte 24/7",
+                "Suporte VIP 24/7",
                 "Garantia de 7 Dias",
                 "Acesso Imediato após a compra"
               ].map((benefit, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <div className="bg-brand-green rounded-full p-1.5 shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-5 h-5 text-white" />
+                  <div className="bg-brand-yellow rounded-full p-1 shrink-0 mt-0.5">
+                    <Check className="w-4 h-4 text-white" />
                   </div>
-                  <span className="font-bold text-base text-left tracking-tight text-gray-900 leading-tight">{benefit}</span>
+                  <span className="font-medium text-sm text-left text-gray-700">{benefit}</span>
                 </div>
               ))}
             </div>
 
             <Button 
               asChild
-              className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center gap-2"
+              variant="outline"
+              className="w-full border-2 border-brand-yellow text-brand-yellow hover:bg-brand-yellow hover:text-white font-bold text-base py-5 rounded-xl transition-all"
             >
-              <a href="https://pay.wiapy.com/iK5ZWZeMKD" target="_blank" rel="noopener noreferrer" data-testid="button-buy-now-main">
-                QUERO A OFERTA COMPLETA
+              <a href="https://pay.wiapy.com/ba24ICov6z" target="_blank" rel="noopener noreferrer">
+                QUERO A OFERTA VIP COMPLETA
               </a>
             </Button>
           </div>
@@ -611,7 +618,10 @@ export default function Home() {
 
           <div className="mt-10">
             <Button 
-              onClick={() => document.getElementById('pricing-section')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={(e) => {
+                e.preventDefault();
+                setShowDiscountPopup(true);
+              }}
               data-testid="button-faq-cta"
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-black text-lg md:text-xl py-7 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center uppercase tracking-tight px-4 leading-tight"
             >
@@ -666,6 +676,66 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Discount Popup */}
+      {showDiscountPopup && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <div className="bg-white rounded-3xl p-6 md:p-8 max-w-md w-full shadow-2xl relative animate-in fade-in zoom-in duration-300">
+            <button 
+              onClick={() => setShowDiscountPopup(false)}
+              className="absolute top-4 right-4 p-2 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors"
+            >
+              <X className="w-5 h-5 text-gray-500" />
+            </button>
+            
+            <div className="text-center space-y-4">
+              <div className="inline-block bg-brand-red text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider mb-2 animate-pulse">
+                ESPERE! NÃO FECHE A PÁGINA
+              </div>
+              
+              <h3 className="text-2xl font-black text-gray-900 leading-tight">
+                Leve a Oferta Completa com Desconto Exclusivo!
+              </h3>
+              
+              <p className="text-gray-600 text-sm">
+                Ao invés de pagar R$ 27,00 pela oferta completa, leve TUDO agora por apenas:
+              </p>
+              
+              <div className="py-4">
+                <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 27,00</p>
+                <p className="text-6xl font-black text-brand-green tracking-tighter">R$ 17,00</p>
+              </div>
+              
+              <div className="bg-green-50 rounded-xl p-4 text-left mb-6">
+                <p className="font-bold text-sm text-brand-green mb-2">Você vai levar:</p>
+                <ul className="space-y-2 text-sm text-gray-700">
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> +120 Dinâmicas</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Todos os 5 Bônus Exclusivos</li>
+                </ul>
+              </div>
+              
+              <Button 
+                asChild
+                className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2"
+              >
+                <a href="https://pay.wiapy.com/O-PAtPXvk" target="_blank" rel="noopener noreferrer">
+                  QUERO A OFERTA COMPLETA POR R$ 17
+                </a>
+              </Button>
+              
+              <button 
+                onClick={() => {
+                  setShowDiscountPopup(false);
+                  window.open("https://pay.wiapy.com/iK5ZWZeMKD", "_blank");
+                }}
+                className="text-gray-400 hover:text-gray-600 text-sm underline underline-offset-4 mt-4 transition-colors"
+              >
+                Não, obrigado. Quero apenas o pacote básico por R$ 10,00.
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
