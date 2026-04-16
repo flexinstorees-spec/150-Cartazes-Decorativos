@@ -11,7 +11,10 @@ import {
   Star,
   Check,
   Gamepad2,
-  X
+  X,
+  CreditCard,
+  Download,
+  School
 } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import {
@@ -229,7 +232,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-2xl border-2 border-brand-purple shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center gap-4">
                 <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                  <span className="text-2xl font-black text-brand-purple">1</span>
+                  <CreditCard className="w-6 h-6 text-brand-purple" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-1-title">Você realiza a compra</h3>
@@ -240,7 +243,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-2xl border-2 border-brand-yellow shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center gap-4">
                 <div className="bg-yellow-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                  <span className="text-2xl font-black text-yellow-600">2</span>
+                  <Mail className="w-6 h-6 text-yellow-600" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-2-title">Recebe o acesso imediatamente no seu e-mail</h3>
@@ -251,7 +254,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-2xl border-2 border-blue-200 shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center gap-4">
                 <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                  <span className="text-2xl font-black text-blue-600">3</span>
+                  <Download className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-3-title">Baixa os arquivos</h3>
@@ -262,7 +265,7 @@ export default function Home() {
             <div className="bg-white p-6 rounded-2xl border-2 border-brand-green shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-center gap-4">
                 <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
-                  <span className="text-2xl font-black text-brand-green">4</span>
+                  <Printer className="w-6 h-6 text-brand-green" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-4-title">Imprime e utiliza na sua sala</h3>
