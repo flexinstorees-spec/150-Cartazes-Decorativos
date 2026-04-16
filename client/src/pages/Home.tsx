@@ -188,11 +188,11 @@ export default function Home() {
             style={{ fontFamily: "'Poppins', sans-serif" }}
             data-testid="text-headline"
           >
-            <span className="font-bold drop-shadow-sm" style={{ color: "#1d5336" }}>+120 Dinâmicas de Matemática</span>{" "}
-            Prontas para Imprimir
+            <span className="font-bold drop-shadow-sm" style={{ color: "#1d5336" }}>+150 Painéis Decorativos</span>{" "}
+            Para Sala de Aula Prontos Para Imprimir
           </h1>
           <p className="text-gray-600 text-lg leading-relaxed mb-0 relative z-20" data-testid="text-subheadline">
-            Tudo pronto para ajudar professoras a ensinar matemática de forma divertida, prática e sem complicação.
+            Material organizado por temas, personagens, animais e datas comemorativas. É só imprimir e usar.
           </p>
 
           {/* VSL Image */}
@@ -213,7 +213,7 @@ export default function Home() {
               }}
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-black text-lg md:text-xl py-7 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-2 uppercase tracking-tight px-4 leading-tight"
             >
-              <span className="shrink-0">👉</span> <span>Quero minhas 120 dinâmicas</span>
+              <span className="shrink-0">👉</span> <span>Quero meus +150 Painéis</span>
             </Button>
           </div>
         </header>
