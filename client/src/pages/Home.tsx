@@ -208,7 +208,7 @@ export default function Home() {
           </div>
 
           {/* Button below Image */}
-          <div className="pt-0">
+          <div className="pt-10">
             <Button 
               onClick={(e) => {
                 e.preventDefault();
@@ -278,7 +278,7 @@ export default function Home() {
         <section className="py-12 space-y-8">
           <div className="text-center space-y-3">
             <h2 className="text-3xl font-black text-gray-900 font-display" data-testid="text-dynamics-gallery-title">
-              Algumas das Dinâmicas que Você Receberá
+              Alguns dos Painéis que Você Vai Receber
             </h2>
             <p className="text-sm leading-relaxed text-gray-600 max-w-md mx-auto" data-testid="text-dynamics-gallery-description">
               Veja algumas ideias prontas que já vão chegar organizadas para você aplicar com as crianças.
