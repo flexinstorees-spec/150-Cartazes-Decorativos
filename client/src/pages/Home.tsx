@@ -224,58 +224,48 @@ export default function Home() {
             <h2 className="text-3xl font-black text-gray-900 font-display" data-testid="text-what-you-will-receive">
               Como Funciona?
             </h2>
-            <div className="flex flex-col items-center gap-2 mt-4 text-gray-700 font-medium">
-              <p>Você realiza a compra</p>
-              <p>Recebe o acesso imediatamente no seu e-mail</p>
-              <p>Baixa os arquivos</p>
-              <p>Imprime e utiliza na sua sala</p>
-            </div>
           </div>
           <div className="grid gap-6">
             <div className="bg-white p-6 rounded-2xl border-2 border-brand-purple shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-start gap-4">
-                <div className="bg-purple-100 p-3 rounded-xl">
-                  <BookOpen className="w-6 h-6 text-brand-purple" />
+              <div className="flex items-center gap-4">
+                <div className="bg-purple-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-2xl font-black text-brand-purple">1</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-1-title">120 Dinâmicas de Matemática Prontas</h3>
-                  <p className="text-gray-600 text-sm" data-testid="text-receive-item-1-description">Jogos, brincadeiras e atividades interativas pensadas para ensinar matemática de forma leve e divertida na educação infantil.</p>
+                  <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-1-title">Você realiza a compra</h3>
                 </div>
               </div>
             </div>
 
             <div className="bg-white p-6 rounded-2xl border-2 border-brand-yellow shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-start gap-4">
-                <div className="bg-yellow-100 p-3 rounded-xl">
-                  <Printer className="w-6 h-6 text-yellow-600" />
+              <div className="flex items-center gap-4">
+                <div className="bg-yellow-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-2xl font-black text-yellow-600">2</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-2-title">Pronto para Imprimir (A4)</h3>
-                  <p className="text-gray-600 text-sm" data-testid="text-receive-item-2-description">Todos os materiais organizados e formatados no tamanho ideal para folha A4. É só imprimir e aplicar em sala de aula.</p>
+                  <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-2-title">Recebe o acesso imediatamente no seu e-mail</h3>
                 </div>
               </div>
             </div>
 
             <div className="bg-white p-6 rounded-2xl border-2 border-blue-200 shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-start gap-4">
-                <div className="bg-blue-100 p-3 rounded-xl">
-                  <Check className="w-6 h-6 text-blue-600" />
+              <div className="flex items-center gap-4">
+                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-2xl font-black text-blue-600">3</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-3-title">Fácil de Aplicar na Prática</h3>
-                  <p className="text-gray-600 text-sm" data-testid="text-receive-item-3-description">Atividades simples, rápidas e adaptadas para o dia a dia da professora — sem complicação e sem precisar planejar.</p>
+                  <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-3-title">Baixa os arquivos</h3>
                 </div>
               </div>
             </div>
 
             <div className="bg-white p-6 rounded-2xl border-2 border-brand-green shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex items-start gap-4">
-                <div className="bg-green-100 p-3 rounded-xl">
-                  <CheckCircle2 className="w-6 h-6 text-brand-green" />
+              <div className="flex items-center gap-4">
+                <div className="bg-green-100 w-12 h-12 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-2xl font-black text-brand-green">4</span>
                 </div>
                 <div>
-                  <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-4-title">Acesso Vitalício</h3>
-                  <p className="text-gray-600 text-sm" data-testid="text-receive-item-4-description">Compre uma única vez e tenha acesso para sempre, podendo baixar e usar quando quiser.</p>
+                  <h3 className="text-lg font-bold text-gray-900" data-testid="text-receive-item-4-title">Imprime e utiliza na sua sala</h3>
                 </div>
               </div>
             </div>
