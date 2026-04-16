@@ -220,9 +220,17 @@ export default function Home() {
 
         {/* What You Will Receive Section */}
         <section className="py-12 space-y-8">
-          <h2 className="text-3xl font-black text-center text-gray-900 font-display" data-testid="text-what-you-will-receive">
-            O Que Você Vai Receber
-          </h2>
+          <div className="text-center space-y-3">
+            <h2 className="text-3xl font-black text-gray-900 font-display" data-testid="text-what-you-will-receive">
+              Como Funciona?
+            </h2>
+            <div className="flex flex-col items-center gap-2 mt-4 text-gray-700 font-medium">
+              <p>Você realiza a compra</p>
+              <p>Recebe o acesso imediatamente no seu e-mail</p>
+              <p>Baixa os arquivos</p>
+              <p>Imprime e utiliza na sua sala</p>
+            </div>
+          </div>
           <div className="grid gap-6">
             <div className="bg-white p-6 rounded-2xl border-2 border-brand-purple shadow-sm hover:shadow-md transition-shadow">
               <div className="flex items-start gap-4">
