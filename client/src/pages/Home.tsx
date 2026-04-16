@@ -53,7 +53,7 @@ import dynamicsImage10 from "@assets/8_1775867563170.png";
 import dynamicsImage11 from "@assets/9_1775867563170.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
 import basicOfferLogo from "@assets/image_1776184585306.png";
-import apostilaImage from "@assets/da_1776121698891.png";
+import apostilaImage from "@assets/APOSTILA_3000X3000_1776383523737.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -199,11 +199,11 @@ export default function Home() {
           </p>
 
           {/* VSL Image */}
-          <div className="w-full max-w-[500px] -mt-12 relative z-10">
+          <div className="w-full max-w-[600px] mt-4 relative z-10">
             <img 
               src={apostilaImage} 
-              alt="Apostila 120 Dinâmicas de Matemática" 
-              className="w-full h-auto object-contain"
+              alt="Painéis Decorativos" 
+              className="w-full h-auto object-contain shadow-none border-none drop-shadow-none bg-transparent"
             />
           </div>
 
