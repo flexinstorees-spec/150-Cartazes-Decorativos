@@ -508,73 +508,91 @@ export default function Home() {
             <Accordion type="single" collapsible className="w-full space-y-4">
               <AccordionItem value="item-1" className="border-none">
                 <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
-                  Como vou receber o material?
+                  Como recebo o material após a compra?
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-gray-600">
-                  O acesso é enviado automaticamente para o seu e-mail logo após a confirmação do pagamento.
+                  Você recebe o acesso imediatamente no seu e-mail após a confirmação do pagamento.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-2" className="border-none">
                 <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
-                  O material é físico ou digital?
+                  Preciso pagar mensalidade?
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-gray-600">
-                  O material é 100% digital. Você poderá acessar e baixar tudo imediatamente após a compra.
+                  Não. O pagamento é único e o acesso é vitalício.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-3" className="border-none">
                 <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
-                  Preciso imprimir as atividades?
+                  Os painéis já vêm prontos ou preciso editar?
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-gray-600">
-                  Sim. As dinâmicas são prontas para imprimir e aplicar em sala de aula.
+                  Os painéis já estão prontos para uso. Basta baixar, imprimir e montar.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-4" className="border-none">
                 <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
-                  Para qual idade é indicado?
+                  Consigo imprimir em casa?
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-gray-600">
-                  O material foi desenvolvido para educação infantil, especialmente para crianças de 3 a 6 anos.
+                  Sim. Os arquivos estão preparados para impressão em impressoras comuns no formato A4.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-5" className="border-none">
                 <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
-                  As atividades são difíceis de aplicar?
+                  Preciso ter experiência com edição ou design?
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-gray-600">
-                  Não. Todas as dinâmicas são simples, práticas e pensadas para o dia a dia da sala de aula.
+                  Não. Todo o material foi feito para ser simples e prático, sem necessidade de edição.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-6" className="border-none">
                 <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
-                  Posso usar em sala com vários alunos?
+                  Posso usar no celular ou precisa de computador?
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-gray-600">
-                  Sim. As dinâmicas foram pensadas para uso em grupo, facilitando a participação de toda a turma.
+                  Você pode acessar pelo celular, mas recomendamos o computador para facilitar o download e a impressão.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-7" className="border-none">
                 <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
-                  Quais formas de pagamento são aceitas?
+                  Os arquivos são organizados ou vou ter que procurar tudo?
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-gray-600">
-                  Você pode pagar via cartão de crédito, Pix ou outras opções disponíveis na página de checkout.
+                  Os arquivos são organizados por categorias para você encontrar tudo rapidamente.
                 </AccordionContent>
               </AccordionItem>
 
               <AccordionItem value="item-8" className="border-none">
                 <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
-                  Tem garantia?
+                  Esse material serve para qualquer série?
                 </AccordionTrigger>
                 <AccordionContent className="px-2 text-gray-600">
-                  Sim. Você tem 7 dias de garantia. Se não gostar do material, pode pedir reembolso.
+                  Sim. Os painéis foram pensados para educação infantil e primeiros anos escolares.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-9" className="border-none">
+                <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
+                  Posso usar mais de uma vez?
+                </AccordionTrigger>
+                <AccordionContent className="px-2 text-gray-600">
+                  Sim. Você pode usar quantas vezes quiser, durante todo o ano.
+                </AccordionContent>
+              </AccordionItem>
+
+              <AccordionItem value="item-10" className="border-none">
+                <AccordionTrigger className="hover:no-underline py-4 px-2 text-left font-medium text-gray-800 [&[data-state=open]]:text-brand-green">
+                  E se eu não gostar do material?
+                </AccordionTrigger>
+                <AccordionContent className="px-2 text-gray-600">
+                  Você tem 7 dias de garantia. Se não gostar, devolvemos 100% do seu dinheiro.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
