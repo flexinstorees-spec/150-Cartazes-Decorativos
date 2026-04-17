@@ -31,7 +31,7 @@ import slide1 from "@assets/stock_images/kids_in_classroom_le_b8e756c7.jpg";
 import slide2 from "@assets/stock_images/kids_in_classroom_le_23e6cce6.jpg";
 import slide3 from "@assets/stock_images/kids_in_classroom_le_d60b13fe.jpg";
 import learnIcon from "@assets/stock_images/happy_child_holding__5bdc9d4e.jpg";
-import certificateBonusImage from "@assets/Baixe_agora_um_material_com_1775600312810.png";
+import certificateBonusImage from "@assets/ChatGPT_Image_16_de_abr._de_2026,_21_33_37_1776386029565.png";
 import rewardBonusImage from "@assets/Sistema_de_recompensas_escolar_alegre_1775600178008.png";
 import musicBonusImage from "@assets/Músicas_Matemáticas_para_aprender_brincando_1775600424569.png";
 import bingoBonusImage from "@assets/BAA61E29-7C63-4B41-AE4D-98561B652FBD_1775586050292.png";
