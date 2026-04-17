@@ -33,7 +33,7 @@ import slide3 from "@assets/stock_images/kids_in_classroom_le_d60b13fe.jpg";
 import learnIcon from "@assets/stock_images/happy_child_holding__5bdc9d4e.jpg";
 import certificateBonusImage from "@assets/ChatGPT_Image_16_de_abr._de_2026,_21_33_37_1776386029565.png";
 import rewardBonusImage from "@assets/ChatGPT_Image_16_de_abr._de_2026,_21_35_41_1776386146667.png";
-import musicBonusImage from "@assets/Músicas_Matemáticas_para_aprender_brincando_1775600424569.png";
+import musicBonusImage from "@assets/ChatGPT_Image_16_de_abr._de_2026,_21_37_36_1776386277858.png";
 import bingoBonusImage from "@assets/BAA61E29-7C63-4B41-AE4D-98561B652FBD_1775586050292.png";
 import unoBonusImage from "@assets/IMG_1161_1775585600425.png";
 import testimonialImage1 from "@assets/img_0363_(1)_1775602956061.png";
