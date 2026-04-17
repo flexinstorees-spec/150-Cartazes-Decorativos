@@ -191,7 +191,7 @@ export default function Home() {
             style={{ fontFamily: "'Poppins', sans-serif" }}
             data-testid="text-headline"
           >
-            <span className="font-bold drop-shadow-sm" style={{ color: "#1d5336" }}>+150 Painéis Decorativos</span>{" "}
+            <span className="font-bold drop-shadow-sm" style={{ color: "#f08c59" }}>+150 Painéis Decorativos</span>{" "}
             Para Sala de Aula Prontos Para Imprimir
           </h1>
           <div className="w-full max-w-[600px] mt-4 relative z-10">
