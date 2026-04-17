@@ -368,33 +368,33 @@ export default function Home() {
           <div className="grid gap-8">
             {[
               {
-                name: "Certificados de Conclusão para os Alunos",
-                desc: "Modelos prontos para premiar e motivar as crianças ao final das atividades.",
-                price: "R$ 47,00",
-                image: certificateBonusImage
+                name: "Cartazes de letras A até Z",
+                desc: "Alfabeto completo e ilustrado para decorar a sala e auxiliar na alfabetização diária das crianças.",
+                price: "R$ 37,00",
+                image: certificateBonusImage // keep placeholder for now, you can replace later
               },
               {
-                name: "Sistema de Recompensas para Sala de Aula",
-                desc: "Cartões e incentivos simples para aumentar o engajamento e participação dos alunos.",
-                price: "R$ 67,00",
+                name: "Cartazes de Numerais",
+                desc: "Números ilustrados e coloridos para facilitar o aprendizado matemático visual na educação infantil.",
+                price: "R$ 27,00",
                 image: rewardBonusImage
               },
               {
-                name: "Músicas Matemáticas para Aprender Brincando",
-                desc: "Áudios educativos para ensinar números e manter a turma envolvida durante as aulas.",
-                price: "R$ 27,00",
+                name: "Sistema de Recompensas Pronto para Imprimir",
+                desc: "Cartões e incentivos simples para aumentar o engajamento e participação dos alunos.",
+                price: "R$ 47,00",
                 image: musicBonusImage
               },
               {
-                name: "Super Bingo Matemático para Sala de Aula",
-                desc: "Uma dinâmica pronta e divertida para ensinar números e envolver toda a turma de forma leve e interativa.",
-                price: "R$ 37,00",
+                name: "Etiquetas Editáveis para Nome dos Alunos",
+                desc: "Modelos fofos e práticos para identificar materiais, cadernos e armários de forma rápida e padronizada.",
+                price: "R$ 19,00",
                 image: bingoBonusImage
               },
               {
-                name: "Desafio Uno Matemático",
-                desc: "Um jogo de cartas dinâmico e competitivo inspirado em jogos populares, ideal para trabalhar números, sequência e atenção com as crianças.",
-                price: "R$ 19,00",
+                name: "Chamadinha Interativa para Imprimir",
+                desc: "Painel dinâmico para a rotina diária de presença, tornando o início da aula mais divertido e organizado.",
+                price: "R$ 29,00",
                 image: unoBonusImage
               }
             ].map((bonus, i) => {
@@ -462,12 +462,12 @@ export default function Home() {
 
             <div className="space-y-4 mb-8">
               {[
-                "+120 Dinâmicas de Matemática (Prontas para Aplicar)",
-                "Bônus 1: Certificados de Conclusão",
-                "Bônus 2: Sistema de Recompensas",
-                "Bônus 3: Músicas Matemáticas",
-                "Bônus 4: Super Bingo Matemático",
-                "Bônus 5: Desafio Uno Matemático",
+                "+150 Painéis Decorativos (Prontos para Imprimir)",
+                "Bônus 1: Cartazes de letras A até Z",
+                "Bônus 2: Cartazes de Numerais",
+                "Bônus 3: Sistema de Recompensas",
+                "Bônus 4: Etiquetas Editáveis para Nome",
+                "Bônus 5: Chamadinha Interativa",
                 "Suporte VIP 24/7",
                 "Garantia de 7 Dias",
                 "Acesso Imediato após a compra"
