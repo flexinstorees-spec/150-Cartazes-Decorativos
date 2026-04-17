@@ -662,25 +662,25 @@ export default function Home() {
 
       {/* Discount Popup */}
       {discountPopupType && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
-          <div className="bg-white rounded-3xl p-6 md:p-8 max-w-md w-full shadow-2xl relative animate-in fade-in zoom-in duration-300">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-2 sm:p-4 bg-black/60 backdrop-blur-sm">
+          <div className="bg-white rounded-[20px] sm:rounded-3xl p-4 sm:p-5 md:p-8 max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl relative animate-in fade-in zoom-in duration-300 scrollbar-hide">
             <button 
               onClick={() => setDiscountPopupType(null)}
-              className="absolute top-4 right-4 p-2 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors"
+              className="absolute top-2 right-2 sm:top-3 sm:right-3 md:top-4 md:right-4 p-1.5 sm:p-2 bg-gray-100 hover:bg-gray-200 rounded-full transition-colors z-10"
             >
-              <X className="w-5 h-5 text-gray-500" />
+              <X className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
             </button>
             
-            <div className="text-center space-y-4">
-              <div className="inline-block bg-brand-red text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider mb-2 animate-pulse">
+            <div className="text-center space-y-2 sm:space-y-3 md:space-y-4 pt-1 sm:pt-2 md:pt-0">
+              <div className="inline-block bg-brand-red text-white text-[9px] sm:text-[10px] md:text-xs font-black px-2 sm:px-3 py-0.5 sm:py-1 rounded-full uppercase tracking-wider mb-0.5 sm:mb-1 animate-pulse">
                 ESPERE! NÃO FECHE A PÁGINA
               </div>
               
-              <h3 className="text-2xl font-black text-gray-900 leading-tight">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-black text-gray-900 leading-tight px-2">
                 Leve o Pack Completo com Desconto Exclusivo
               </h3>
               
-              <div className="w-full max-w-[300px] mx-auto py-2">
+              <div className="w-full max-w-[150px] sm:max-w-[200px] md:max-w-[300px] mx-auto py-0.5 sm:py-1 md:py-2">
                 <img 
                   src={popupImage} 
                   alt="Oferta Especial" 
@@ -688,32 +688,32 @@ export default function Home() {
                 />
               </div>
               
-              <p className="text-gray-600 text-sm">
+              <p className="text-gray-600 text-[11px] sm:text-xs md:text-sm px-1 sm:px-2 leading-snug">
                 Ao invés de pagar R$ 47,00 pelo material completo, leve TUDO agora por apenas:
               </p>
               
-              <div className="py-4">
-                <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 47,00</p>
-                <p className="text-6xl font-black text-brand-green tracking-tighter">
+              <div className="py-1 sm:py-2 md:py-4">
+                <p className="text-gray-400 text-sm sm:text-base md:text-lg line-through decoration-red-500 decoration-2 mb-0.5">R$ 47,00</p>
+                <p className="text-4xl sm:text-5xl md:text-6xl font-black text-brand-green tracking-tighter leading-none">
                   R$ 4,90
                 </p>
               </div>
               
-              <div className="bg-green-50 rounded-xl p-4 text-left mb-6">
-                <p className="font-bold text-sm text-brand-green mb-2">Você vai levar:</p>
-                <ul className="space-y-2 text-sm text-gray-700">
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> +150 Painéis Decorativos Para Sala de Aula</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Cartazes de Letras A até Z</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Cartazes de Numerais</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Sistema de Recompensas Pronto para Imprimir</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Etiquetas Editáveis para Nome dos Alunos</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Chamadinha Interativa para Imprimir</li>
+              <div className="bg-green-50 rounded-xl p-2 sm:p-3 md:p-4 text-left mb-2 sm:mb-4 md:mb-6">
+                <p className="font-bold text-[11px] sm:text-[13px] md:text-sm text-brand-green mb-1.5 sm:mb-2">Você vai levar:</p>
+                <ul className="space-y-1 sm:space-y-2 text-[10px] sm:text-[12px] md:text-sm text-gray-700">
+                  <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">+150 Painéis Decorativos Para Sala de Aula</span></li>
+                  <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">Cartazes de Letras A até Z</span></li>
+                  <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">Cartazes de Numerais</span></li>
+                  <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">Sistema de Recompensas Pronto para Imprimir</span></li>
+                  <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">Etiquetas Editáveis para Nome dos Alunos</span></li>
+                  <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">Chamadinha Interativa para Imprimir</span></li>
                 </ul>
               </div>
               
               <Button 
                 asChild
-                className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-[13px] sm:text-base md:text-lg h-14 sm:h-16 rounded-xl shadow-md transition-all flex items-center justify-center px-2"
+                className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-[11px] sm:text-[12px] md:text-lg h-10 sm:h-12 md:h-16 rounded-lg sm:rounded-xl shadow-md transition-all flex items-center justify-center px-1"
               >
                 <a 
                   href={discountPopupType === "exit" ? "https://pay.wiapy.com/5UYb0Ch6b" : "https://pay.wiapy.com/O-PAtPXvk"} 
@@ -734,7 +734,7 @@ export default function Home() {
                     setDiscountPopupType(null);
                   }
                 }}
-                className="text-gray-400 hover:text-gray-600 text-sm underline underline-offset-4 mt-4 transition-colors"
+                className="text-gray-400 hover:text-gray-600 text-[9px] sm:text-[11px] md:text-sm underline underline-offset-4 mt-2 sm:mt-3 md:mt-4 transition-colors leading-tight block w-full"
               >
                 Não, obrigado. Vou deixar essa oportunidade passar.
               </button>
