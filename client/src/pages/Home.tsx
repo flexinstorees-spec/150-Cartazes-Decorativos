@@ -53,7 +53,7 @@ import dynamicsImage10 from "@assets/8_1775867563170.png";
 import dynamicsImage11 from "@assets/9_1775867563170.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
 import basicOfferLogo from "@assets/image_1776184585306.png";
-import apostilaImage from "@assets/Sem_título_(1)_1776385114135.png";
+import apostilaImage from "@assets/download_1776385307013.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -194,11 +194,6 @@ export default function Home() {
             <span className="font-bold drop-shadow-sm" style={{ color: "#1d5336" }}>+150 Painéis Decorativos</span>{" "}
             Para Sala de Aula Prontos Para Imprimir
           </h1>
-          <p className="text-gray-600 text-lg leading-relaxed mb-0 relative z-20" data-testid="text-subheadline">
-            Material organizado por temas, personagens, animais e datas comemorativas. É só imprimir e usar.
-          </p>
-
-          {/* VSL Image */}
           <div className="w-full max-w-[600px] mt-4 relative z-10">
             <img 
               src={apostilaImage} 
@@ -206,6 +201,10 @@ export default function Home() {
               className="w-full h-auto object-contain shadow-none border-none drop-shadow-none bg-transparent"
             />
           </div>
+
+          <p className="text-gray-600 text-lg leading-relaxed mb-0 relative z-20 mt-6" data-testid="text-subheadline">
+            Material organizado por temas, personagens, animais e datas comemorativas. É só imprimir e usar.
+          </p>
 
           {/* Button below Image */}
           <div className="pt-10">
