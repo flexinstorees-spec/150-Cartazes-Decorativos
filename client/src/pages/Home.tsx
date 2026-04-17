@@ -41,17 +41,21 @@ import testimonialImage2 from "@assets/img_0363_(2)_1775602956061.png";
 import testimonialImage3 from "@assets/img_0363_(3)_1775602956061.png";
 import testimonialImage4 from "@assets/img_0363_(4)_1775602956061.png";
 import popupImage from "@assets/Sem_título_(1)_1776387339704.png";
-import dynamicsImage1 from "@assets/1_1775690645262.png";
-import dynamicsImage2 from "@assets/2_1775690645262.png";
-import dynamicsImage3 from "@assets/3_1775690645262.png";
-import dynamicsImage4 from "@assets/4_1775690645262.png";
-import dynamicsImage5 from "@assets/5_1775690645263.png";
-import dynamicsImage6 from "@assets/6_1775690645263.png";
-import dynamicsImage7 from "@assets/7_1775690645263.png";
-import dynamicsImage8 from "@assets/10_1775867563169.png";
-import dynamicsImage9 from "@assets/11_1775867563170.png";
-import dynamicsImage10 from "@assets/8_1775867563170.png";
-import dynamicsImage11 from "@assets/9_1775867563170.png";
+import dynamicsImage1 from "@assets/1_1776468902532.png";
+import dynamicsImage2 from "@assets/2_1776468902532.png";
+import dynamicsImage3 from "@assets/3_1776468902532.png";
+import dynamicsImage4 from "@assets/4_1776468902532.png";
+import dynamicsImage5 from "@assets/5_1776468902533.png";
+import dynamicsImage6 from "@assets/6_1776468902533.png";
+import dynamicsImage7 from "@assets/7_1776468902533.png";
+import dynamicsImage8 from "@assets/8_1776468902533.png";
+import dynamicsImage9 from "@assets/9_1776468902534.png";
+import dynamicsImage10 from "@assets/10_1776468902534.png";
+import dynamicsImage11 from "@assets/11_1776468902534.png";
+import dynamicsImage12 from "@assets/12_1776468902534.png";
+import dynamicsImage13 from "@assets/13_1776468902534.png";
+import dynamicsImage14 from "@assets/14_1776468902534.png";
+import dynamicsImage15 from "@assets/15_1776468902535.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
 import basicOfferLogo from "@assets/Sem_título_(1)_1776385358921.png";
 import apostilaImage from "@assets/download_1776385307013.png";
@@ -164,17 +168,21 @@ export default function Home() {
   ];
 
   const dynamicsGallery = [
-    { image: dynamicsImage1, title: "Sempre Dez" },
-    { image: dynamicsImage2, title: "Multiplicação em Ação" },
-    { image: dynamicsImage3, title: "Amarelinha da Multiplicação" },
-    { image: dynamicsImage4, title: "Número Secreto" },
-    { image: dynamicsImage5, title: "Roleta da Soma" },
-    { image: dynamicsImage6, title: "Sonho da Tabuada" },
-    { image: dynamicsImage7, title: "Sorvete da Matemática" },
-    { image: dynamicsImage8, title: "Bingo da Subtração" },
-    { image: dynamicsImage9, title: "Roleta das Operações" },
-    { image: dynamicsImage10, title: "Eu Tenho, Quem Tem?" },
-    { image: dynamicsImage11, title: "Ditado da Adição" }
+    { image: dynamicsImage1, title: "Cumprimento Divertido" },
+    { image: dynamicsImage2, title: "Dia do Circo" },
+    { image: dynamicsImage3, title: "Feliz Páscoa" },
+    { image: dynamicsImage4, title: "Dia das Mães" },
+    { image: dynamicsImage5, title: "Estação de Primavera" },
+    { image: dynamicsImage6, title: "Dia do Livro" },
+    { image: dynamicsImage7, title: "Dia da Água" },
+    { image: dynamicsImage8, title: "Safari" },
+    { image: dynamicsImage9, title: "Dia da Inclusão (Down)" },
+    { image: dynamicsImage10, title: "Feliz Aniversário" },
+    { image: dynamicsImage11, title: "Aniversariantes do Mês" },
+    { image: dynamicsImage12, title: "Númerais" },
+    { image: dynamicsImage13, title: "Painel Abelhinha" },
+    { image: dynamicsImage14, title: "Dia da Inclusão (Autismo)" },
+    { image: dynamicsImage15, title: "Sejam Bem-Vindos" }
   ];
 
   return (
