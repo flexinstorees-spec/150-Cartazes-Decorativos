@@ -622,17 +622,17 @@ export default function Home() {
               Precisa de ajuda?
             </div>
             <p className="text-gray-600 max-w-sm mx-auto text-sm leading-relaxed px-4" data-testid="text-help-description">
-              Envie um e-mail para <span className="font-semibold text-gray-900">suporte@120dinamicasmatematicas.com</span> e nossa equipe responderá o mais rápido possível para te ajudar com qualquer dúvida.
+              Envie um e-mail para <span className="font-semibold text-gray-900">paineisdecorativos@gmail.com</span> e nossa equipe responderá o mais rápido possível para te ajudar com qualquer dúvida.
             </p>
           </div>
 
           <div className="max-w-md mx-auto px-6 space-y-3">
             <h3 className="text-lg font-bold text-gray-900" data-testid="text-about-heading">Sobre o material</h3>
             <p className="text-sm text-gray-600 leading-relaxed" data-testid="text-about-paragraph-1">
-              Desenvolvemos este material para ajudar professoras da educação infantil a tornarem suas aulas de matemática mais leves, dinâmicas e envolventes.
+              Desenvolvemos este material para ajudar professoras a deixarem sua sala de aula mais organizada, bonita e pronta para o dia a dia sem perder tempo criando tudo do zero.
             </p>
             <p className="text-sm text-gray-600 leading-relaxed" data-testid="text-about-paragraph-2">
-              Nosso objetivo é facilitar o seu dia a dia em sala de aula, oferecendo atividades prontas que ajudam a prender a atenção das crianças e tornar o aprendizado mais divertido.
+              Nosso objetivo é facilitar sua rotina, oferecendo painéis prontos para imprimir que você pode usar durante todo o ano, com praticidade e rapidez.
             </p>
           </div>
         </footer>
