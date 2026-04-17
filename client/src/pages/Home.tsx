@@ -686,7 +686,7 @@ export default function Home() {
               <div className="py-4">
                 <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 47,00</p>
                 <p className="text-6xl font-black text-brand-green tracking-tighter">
-                  R$ 19,90
+                  R$ 4,90
                 </p>
               </div>
               
