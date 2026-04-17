@@ -40,6 +40,7 @@ import testimonialImage1 from "@assets/img_0363_(1)_1775602956061.png";
 import testimonialImage2 from "@assets/img_0363_(2)_1775602956061.png";
 import testimonialImage3 from "@assets/img_0363_(3)_1775602956061.png";
 import testimonialImage4 from "@assets/img_0363_(4)_1775602956061.png";
+import popupImage from "@assets/Sem_título_(1)_1776387339704.png";
 import dynamicsImage1 from "@assets/1_1775690645262.png";
 import dynamicsImage2 from "@assets/2_1775690645262.png";
 import dynamicsImage3 from "@assets/3_1775690645262.png";
@@ -678,6 +679,14 @@ export default function Home() {
               <h3 className="text-2xl font-black text-gray-900 leading-tight">
                 Leve o Pack Completo com Desconto Exclusivo
               </h3>
+              
+              <div className="w-full max-w-[300px] mx-auto py-2">
+                <img 
+                  src={popupImage} 
+                  alt="Oferta Especial" 
+                  className="w-full h-auto object-contain rounded-xl"
+                />
+              </div>
               
               <p className="text-gray-600 text-sm">
                 Ao invés de pagar R$ 47,00 pelo material completo, leve TUDO agora por apenas:
