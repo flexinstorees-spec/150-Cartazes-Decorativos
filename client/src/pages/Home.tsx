@@ -676,29 +676,29 @@ export default function Home() {
               </div>
               
               <h3 className="text-2xl font-black text-gray-900 leading-tight">
-                Leve a Oferta Completa com Desconto Exclusivo!
+                Leve o Pack Completo com Desconto Exclusivo
               </h3>
               
               <p className="text-gray-600 text-sm">
-                Ao invés de pagar R$ 97,00 pela oferta completa, leve TUDO agora por apenas:
+                Ao invés de pagar R$ 47,00 pelo material completo, leve TUDO agora por apenas:
               </p>
               
               <div className="py-4">
-                <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 97,00</p>
+                <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 47,00</p>
                 <p className="text-6xl font-black text-brand-green tracking-tighter">
-                  {discountPopupType === "exit" ? "R$ 5,90" : "R$ 17,00"}
+                  R$ 19,90
                 </p>
               </div>
               
               <div className="bg-green-50 rounded-xl p-4 text-left mb-6">
                 <p className="font-bold text-sm text-brand-green mb-2">Você vai levar:</p>
                 <ul className="space-y-2 text-sm text-gray-700">
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> +120 Dinâmicas de Matemática</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Bônus 1: Certificados de Conclusão</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Bônus 2: Sistema de Recompensas</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Bônus 3: Músicas Matemáticas</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Bônus 4: Super Bingo Matemático</li>
-                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Bônus 5: Desafio Uno Matemático</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> +150 Painéis Decorativos Para Sala de Aula</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Cartazes de Letras A até Z</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Cartazes de Numerais</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Sistema de Recompensas Pronto para Imprimir</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Etiquetas Editáveis para Nome dos Alunos</li>
+                  <li className="flex items-center gap-2"><CheckCircle2 className="w-4 h-4 text-brand-green" /> Chamadinha Interativa para Imprimir</li>
                 </ul>
               </div>
               
@@ -712,7 +712,7 @@ export default function Home() {
                   rel="noopener noreferrer" 
                   className="text-center w-full"
                 >
-                  QUERO A OFERTA COMPLETA POR {discountPopupType === "exit" ? "R$ 5,90" : "R$ 17,00"}
+                  QUERO ACESSO COMPLETO AGORA
                 </a>
               </Button>
               
@@ -727,9 +727,7 @@ export default function Home() {
                 }}
                 className="text-gray-400 hover:text-gray-600 text-sm underline underline-offset-4 mt-4 transition-colors"
               >
-                {discountPopupType === "exit" 
-                  ? "Não, obrigado. Vou perder essa oportunidade única." 
-                  : "Não, obrigado. Quero apenas o pacote básico por R$ 10,00."}
+                Não, obrigado. Vou deixar essa oportunidade passar.
               </button>
             </div>
           </div>
