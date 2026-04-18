@@ -36,10 +36,11 @@ import rewardBonusImage from "@assets/ChatGPT_Image_16_de_abr._de_2026,_21_35_41
 import musicBonusImage from "@assets/ChatGPT_Image_16_de_abr._de_2026,_21_37_36_1776386277858.png";
 import bingoBonusImage from "@assets/ChatGPT_Image_16_de_abr._de_2026,_21_39_45_1776386406532.png";
 import unoBonusImage from "@assets/e6f57984-5789-43a9-a25a-1f2b4897a7e4_1776386651690.png";
-import testimonialImage1 from "@assets/img_0363_(1)_1775602956061.png";
-import testimonialImage2 from "@assets/img_0363_(2)_1775602956061.png";
-import testimonialImage3 from "@assets/img_0363_(3)_1775602956061.png";
-import testimonialImage4 from "@assets/img_0363_(4)_1775602956061.png";
+import testimonialImage1 from "@assets/img_0363_1776471252445.png";
+import testimonialImage2 from "@assets/img_0363_(1)_1776471252444.png";
+import testimonialImage3 from "@assets/img_0363_(2)_1776471252444.png";
+import testimonialImage4 from "@assets/img_0363_(3)_1776471252444.png";
+import testimonialImage5 from "@assets/img_0363_(4)_1776471252445.png";
 import popupImage from "@assets/Sem_título_(1)_1776387339704.png";
 import dynamicsImage1 from "@assets/1_1776468902532.png";
 import dynamicsImage2 from "@assets/2_1776468902532.png";
@@ -164,7 +165,8 @@ export default function Home() {
     testimonialImage1,
     testimonialImage2,
     testimonialImage3,
-    testimonialImage4
+    testimonialImage4,
+    testimonialImage5
   ];
 
   const dynamicsGallery = [
