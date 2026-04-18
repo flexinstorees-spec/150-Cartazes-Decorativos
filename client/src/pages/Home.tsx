@@ -664,7 +664,7 @@ export default function Home() {
               {currentNotification.name} comprou agora
             </span>
             <span className="text-white/80 text-[10px] uppercase tracking-wider font-bold">
-              +120 Dinâmicas de Matemática
+              +150 Painéis Decorativos
             </span>
           </div>
         </div>
