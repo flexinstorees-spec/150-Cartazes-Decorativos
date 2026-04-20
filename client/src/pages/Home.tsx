@@ -495,7 +495,7 @@ export default function Home() {
               asChild
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2"
             >
-              <a href="https://pay.wiapy.com/iK5ZWZeMKD" target="_blank" rel="noopener noreferrer">
+              <a href="https://pay.wiapy.com/h9nvMOKemW" target="_blank" rel="noopener noreferrer">
                 QUERO COMPRAR AGORA
               </a>
             </Button>
@@ -739,7 +739,7 @@ export default function Home() {
                 onClick={() => {
                   if (discountPopupType === "upsell") {
                     setDiscountPopupType(null);
-                    window.open("https://pay.wiapy.com/iK5ZWZeMKD", "_blank");
+                    window.open("https://pay.wiapy.com/h9nvMOKemW", "_blank");
                   } else {
                     setDiscountPopupType(null);
                   }
