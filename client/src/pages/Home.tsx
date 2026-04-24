@@ -446,28 +446,21 @@ export default function Home() {
 
         {/* Pricing Card */}
         <section id="pricing-section" className="py-8 space-y-8">
-          {/* Main Offer Card - 10,00 */}
-          <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden transform scale-105 z-10 mt-12">
-            <div className="absolute top-4 right-4 bg-brand-green text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-bounce shadow-md">
-              MAIS VENDIDO
+          
+          {/* Premium Offer Card - 27,00 */}
+          <div className="bg-gradient-to-br from-brand-green to-emerald-900 rounded-3xl border-4 border-yellow-400 p-8 shadow-2xl max-w-sm mx-auto relative overflow-hidden transform scale-105 z-20 mt-12 mb-8">
+            <div className="absolute top-4 right-4 bg-yellow-400 text-gray-900 text-xs font-black px-4 py-1.5 rounded-full uppercase tracking-wider z-10 animate-bounce shadow-lg">
+              PLANO PREMIUM - RECOMENDADO
             </div>
-            <div className="absolute top-0 inset-x-0 h-2 bg-brand-green"></div>
-            <div className="text-center mb-2 mt-2">
-              <img 
-                src={basicOfferLogo}
-                alt="Logo 120 Dinâmicas de Matemática" 
-                className="mx-auto w-full max-w-[280px] h-auto object-contain"
-              />
-            </div>
-
-            <div className="text-center mb-6 mt-4">
-              <p className="text-gray-500 text-sm" data-testid="text-offer-price-label-main">De R$ 97,00 por apenas:</p>
-              <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 97,00</p>
-              <p className="text-6xl font-black text-brand-green mt-2 tracking-tighter" data-testid="text-offer-price-main">R$ 10,00</p>
+            
+            <div className="text-center mb-6 mt-6">
+              <p className="text-emerald-100 text-sm font-medium" data-testid="text-offer-price-label-premium">De R$ 197,00 por apenas:</p>
+              <p className="text-emerald-200/60 text-xl line-through decoration-red-500 decoration-2">R$ 197,00</p>
+              <p className="text-6xl font-black text-white mt-2 tracking-tighter drop-shadow-md" data-testid="text-offer-price-premium">R$ 27,00</p>
             </div>
 
-            <p className="text-center text-sm font-semibold text-gray-700 mb-6" data-testid="text-offer-access-intro-main">
-              Você recebe acesso imediato a:
+            <p className="text-center text-sm font-semibold text-emerald-50 mb-6 bg-black/20 py-2 rounded-lg" data-testid="text-offer-access-intro-premium">
+              Pacote Completo + Todos os Bônus:
             </p>
 
             <div className="space-y-4 mb-8">
@@ -478,25 +471,83 @@ export default function Home() {
                 "Bônus 3: Sistema de Recompensas",
                 "Bônus 4: Etiquetas Editáveis para Nome",
                 "Bônus 5: Chamadinha Interativa",
-                "Suporte VIP 24/7",
-                "Garantia de 7 Dias",
-                "Acesso Imediato após a compra"
+                "Suporte VIP 24/7 Prioritário",
+                "Garantia Incondicional de 7 Dias",
+                "Acesso Imediato e Vitalício"
               ].map((benefit, i) => (
                 <div key={i} className="flex items-start gap-3">
-                  <div className="bg-brand-green rounded-full p-1.5 shrink-0 mt-0.5">
-                    <CheckCircle2 className="w-5 h-5 text-white" />
+                  <div className="bg-yellow-400 rounded-full p-1.5 shrink-0 mt-0.5 shadow-sm">
+                    <CheckCircle2 className="w-5 h-5 text-emerald-900" />
                   </div>
-                  <span className="font-bold text-base text-left tracking-tight text-gray-900 leading-tight">{benefit}</span>
+                  <span className="font-bold text-base text-left tracking-tight text-white leading-tight">{benefit}</span>
                 </div>
               ))}
             </div>
 
             <Button 
               asChild
-              className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2"
+              className="w-full bg-yellow-400 hover:bg-yellow-500 text-emerald-950 font-black text-xl py-7 rounded-xl shadow-[0_10px_20px_rgba(0,0,0,0.3)] transition-all flex items-center justify-center gap-2 border-b-4 border-yellow-600 hover:-translate-y-1 hover:shadow-[0_15px_30px_rgba(0,0,0,0.4)]"
+            >
+              <a href="https://pay.wiapy.com/mtIG0alfu" target="_blank" rel="noopener noreferrer">
+                <span className="shrink-0 text-2xl">⭐</span> QUERO O PLANO PREMIUM
+              </a>
+            </Button>
+          </div>
+
+          {/* Main Offer Card - 10,00 */}
+          <div className="bg-white rounded-3xl border-2 border-gray-200 p-6 shadow-md max-w-sm mx-auto relative overflow-hidden z-10 opacity-90 hover:opacity-100 transition-opacity">
+            <div className="text-center mb-6 mt-4">
+              <p className="text-gray-500 text-sm" data-testid="text-offer-price-label-main">Plano Básico</p>
+              <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 97,00</p>
+              <p className="text-5xl font-black text-gray-800 mt-2 tracking-tighter" data-testid="text-offer-price-main">R$ 10,00</p>
+            </div>
+
+            <p className="text-center text-sm font-semibold text-gray-600 mb-6" data-testid="text-offer-access-intro-main">
+              Acesso apenas ao material principal:
+            </p>
+
+            <div className="space-y-4 mb-8">
+              {[
+                "+150 Painéis Decorativos (Prontos para Imprimir)",
+                "Suporte Básico via E-mail",
+                "Garantia de 7 Dias",
+                "Acesso Imediato após a compra"
+              ].map((benefit, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <div className="bg-gray-300 rounded-full p-1.5 shrink-0 mt-0.5">
+                    <CheckCircle2 className="w-5 h-5 text-gray-600" />
+                  </div>
+                  <span className="font-bold text-base text-left tracking-tight text-gray-700 leading-tight">{benefit}</span>
+                </div>
+              ))}
+              
+              {/* Crossed out bonuses */}
+              <div className="pt-4 mt-4 border-t border-gray-100 space-y-3">
+                <p className="text-xs font-bold text-red-400 uppercase tracking-wider text-center mb-4">Itens NÃO Inclusos:</p>
+                {[
+                  "Bônus 1: Cartazes de letras A até Z",
+                  "Bônus 2: Cartazes de Numerais",
+                  "Bônus 3: Sistema de Recompensas",
+                  "Bônus 4: Etiquetas Editáveis para Nome",
+                  "Bônus 5: Chamadinha Interativa"
+                ].map((benefit, i) => (
+                  <div key={i} className="flex items-start gap-3 opacity-50">
+                    <div className="bg-red-100 rounded-full p-1.5 shrink-0 mt-0.5">
+                      <X className="w-4 h-4 text-red-500" />
+                    </div>
+                    <span className="font-medium text-sm text-left tracking-tight text-gray-500 line-through leading-tight">{benefit}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <Button 
+              asChild
+              variant="outline"
+              className="w-full border-2 border-gray-300 text-gray-600 hover:bg-gray-50 font-bold text-lg py-6 rounded-xl transition-all flex items-center justify-center gap-2"
             >
               <a href="https://pay.wiapy.com/h9nvMOKemW" target="_blank" rel="noopener noreferrer">
-                QUERO COMPRAR AGORA
+                QUERO APENAS O BÁSICO
               </a>
             </Button>
           </div>
