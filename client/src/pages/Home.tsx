@@ -58,7 +58,7 @@ import dynamicsImage13 from "@assets/13_1776468902534.png";
 import dynamicsImage14 from "@assets/14_1776468902534.png";
 import dynamicsImage15 from "@assets/15_1776468902535.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
-import basicOfferLogo from "@assets/Sem_título_(1)_1776385358921.png";
+import basicOfferLogo from "@assets/53ca95e6-93b5-4ff3-aefa-ee82c359c2e2_1777073337451.png";
 import apostilaImage from "@assets/download_1776385307013.png";
 
 export default function Home() {
@@ -449,7 +449,7 @@ export default function Home() {
           
           <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-8 max-w-5xl mx-auto px-4 mt-12 mb-8">
             {/* Main Offer Card - 10,00 */}
-            <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl w-full max-w-sm relative overflow-hidden z-10 flex flex-col">
+            <div className="bg-white rounded-3xl border-2 border-gray-200 p-6 shadow-xl w-full max-w-sm relative overflow-hidden z-10 flex flex-col">
               <div className="absolute top-0 inset-x-0 h-2 bg-brand-green"></div>
               <div className="text-center mb-2 mt-2">
                 <img 
