@@ -14,7 +14,8 @@ import {
   X,
   CreditCard,
   Download,
-  School
+  School,
+  Gift
 } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import {
@@ -531,14 +532,21 @@ export default function Home() {
                   "Suporte VIP 24/7",
                   "Garantia de 7 Dias",
                   "Acesso Imediato após a compra"
-                ].map((benefit, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="bg-brand-green rounded-full p-1.5 shrink-0 mt-0.5">
-                      <CheckCircle2 className="w-5 h-5 text-white" />
+                ].map((benefit, i) => {
+                  const isBonus = benefit.startsWith("Bônus");
+                  return (
+                    <div key={i} className="flex items-start gap-3">
+                      <div className={`rounded-full p-1.5 shrink-0 mt-0.5 ${isBonus ? 'bg-yellow-400' : 'bg-brand-green'}`}>
+                        {isBonus ? (
+                          <Gift className="w-5 h-5 text-emerald-900" />
+                        ) : (
+                          <CheckCircle2 className="w-5 h-5 text-white" />
+                        )}
+                      </div>
+                      <span className="font-bold text-base text-left tracking-tight text-gray-900 leading-tight">{benefit}</span>
                     </div>
-                    <span className="font-bold text-base text-left tracking-tight text-gray-900 leading-tight">{benefit}</span>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               <Button 
