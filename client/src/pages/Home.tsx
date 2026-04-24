@@ -472,7 +472,7 @@ export default function Home() {
 
               <div className="space-y-4 mb-8 flex-grow">
                 {[
-                  "+150 Painéis Decorativos (Prontos para Imprimir)",
+                  "10 Painéis Decorativos (Prontos para Imprimir)",
                   "Suporte Básico via E-mail",
                   "Garantia de 7 Dias",
                   "Acesso Imediato após a compra"
