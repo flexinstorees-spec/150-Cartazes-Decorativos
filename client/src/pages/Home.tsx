@@ -59,6 +59,7 @@ import dynamicsImage14 from "@assets/14_1776468902534.png";
 import dynamicsImage15 from "@assets/15_1776468902535.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
 import basicOfferLogo from "@assets/53ca95e6-93b5-4ff3-aefa-ee82c359c2e2_1777073337451.png";
+import premiumOfferLogo from "@assets/940bced4-cd12-4a4b-8480-d4cc494c207f_1777073530948.png";
 import apostilaImage from "@assets/download_1776385307013.png";
 
 export default function Home() {
@@ -503,7 +504,7 @@ export default function Home() {
               <div className="absolute top-0 inset-x-0 h-2 bg-brand-green"></div>
               <div className="text-center mb-2 mt-2">
                 <img 
-                  src={basicOfferLogo}
+                  src={premiumOfferLogo}
                   alt="Logo Painéis Premium" 
                   className="mx-auto w-full max-w-[280px] h-auto object-contain"
                 />
