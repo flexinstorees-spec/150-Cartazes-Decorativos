@@ -226,7 +226,7 @@ export default function Home() {
               }}
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-black text-lg md:text-xl py-7 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-2 uppercase tracking-tight px-4 leading-tight"
             >
-              <span className="shrink-0">👉</span> <span>Quero meus +150 Moldes de Painéis</span>
+              <span className="shrink-0">👉</span> <span>Quero meus +150 Moldes</span>
             </Button>
           </div>
         </header>
