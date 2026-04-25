@@ -202,7 +202,7 @@ export default function Home() {
             style={{ fontFamily: "'Poppins', sans-serif" }}
             data-testid="text-headline"
           >
-            <span className="font-bold drop-shadow-sm" style={{ color: "#f08c59" }}>+150 Painéis Decorativos</span>{" "}
+            <span className="font-bold drop-shadow-sm" style={{ color: "#f08c59" }}>+150 Moldes de Painéis Decorativos</span>{" "}
             Para Sala de Aula Prontos Para Imprimir
           </h1>
           <div className="w-full max-w-[600px] mt-4 relative z-10">
@@ -226,7 +226,7 @@ export default function Home() {
               }}
               className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-black text-lg md:text-xl py-7 rounded-2xl shadow-lg hover:scale-[1.02] transition-all flex items-center justify-center gap-2 uppercase tracking-tight px-4 leading-tight"
             >
-              <span className="shrink-0">👉</span> <span>Quero meus +150 Painéis</span>
+              <span className="shrink-0">👉</span> <span>Quero meus +150 Moldes de Painéis</span>
             </Button>
           </div>
         </header>
@@ -472,7 +472,7 @@ export default function Home() {
 
             <div className="space-y-4 mb-8">
               {[
-                "+150 Painéis Decorativos (Prontos para Imprimir)",
+                "+150 Moldes de Painéis Decorativos (Prontos para Imprimir)",
                 "Bônus 1: Cartazes de letras A até Z",
                 "Bônus 2: Cartazes de Numerais",
                 "Bônus 3: Sistema de Recompensas",
@@ -664,7 +664,7 @@ export default function Home() {
               {currentNotification.name} comprou agora
             </span>
             <span className="text-white/80 text-[10px] uppercase tracking-wider font-bold">
-              +150 Painéis Decorativos
+              +150 Moldes de Painéis Decorativos
             </span>
           </div>
         </div>
@@ -712,7 +712,7 @@ export default function Home() {
               <div className="bg-green-50 rounded-xl p-2 sm:p-3 md:p-4 text-left mb-2 sm:mb-4 md:mb-6">
                 <p className="font-bold text-[11px] sm:text-[13px] md:text-sm text-brand-green mb-1.5 sm:mb-2">Você vai levar:</p>
                 <ul className="space-y-1 sm:space-y-2 text-[10px] sm:text-[12px] md:text-sm text-gray-700">
-                  <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">+150 Painéis Decorativos Para Sala de Aula</span></li>
+                  <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">+150 Moldes de Painéis Decorativos Para Sala de Aula</span></li>
                   <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">Cartazes de Letras A até Z</span></li>
                   <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">Cartazes de Numerais</span></li>
                   <li className="flex items-start gap-1.5 sm:gap-2"><CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0 mt-0.5 text-brand-green" /> <span className="leading-tight">Sistema de Recompensas Pronto para Imprimir</span></li>
