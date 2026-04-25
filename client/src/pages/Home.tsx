@@ -14,8 +14,7 @@ import {
   X,
   CreditCard,
   Download,
-  School,
-  Gift
+  School
 } from "lucide-react";
 import useEmblaCarousel from "embla-carousel-react";
 import {
@@ -59,8 +58,7 @@ import dynamicsImage13 from "@assets/13_1776468902534.png";
 import dynamicsImage14 from "@assets/14_1776468902534.png";
 import dynamicsImage15 from "@assets/15_1776468902535.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
-import basicOfferLogo from "@assets/ChatGPT_Image_24_de_abr._de_2026,_20_32_34_1777073589805.png";
-import premiumOfferLogo from "@assets/940bced4-cd12-4a4b-8480-d4cc494c207f_1777073530948.png";
+import basicOfferLogo from "@assets/Sem_título_(1)_1776385358921.png";
 import apostilaImage from "@assets/download_1776385307013.png";
 
 export default function Home() {
@@ -448,116 +446,59 @@ export default function Home() {
 
         {/* Pricing Card */}
         <section id="pricing-section" className="py-8 space-y-8">
-          
-          <div className="flex flex-col md:flex-row justify-center items-center md:items-stretch gap-8 max-w-5xl mx-auto px-4 mt-12 mb-8">
-            {/* Main Offer Card - 10,00 */}
-            <div className="bg-white rounded-3xl border-2 border-gray-200 p-6 shadow-xl w-full max-w-sm relative overflow-hidden z-10 flex flex-col">
-              <div className="absolute top-0 inset-x-0 h-2 bg-brand-green"></div>
-              <div className="text-center mb-2 mt-2">
-                <img 
-                  src={basicOfferLogo}
-                  alt="Logo Painéis" 
-                  className="mx-auto w-full max-w-[280px] h-auto object-contain"
-                />
-              </div>
+          {/* Main Offer Card - 10,00 */}
+          <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden transform scale-105 z-10 mt-12">
+            <div className="absolute top-4 right-4 bg-brand-green text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-bounce shadow-md">
+              MAIS VENDIDO
+            </div>
+            <div className="absolute top-0 inset-x-0 h-2 bg-brand-green"></div>
+            <div className="text-center mb-2 mt-2">
+              <img 
+                src={basicOfferLogo}
+                alt="Logo 120 Dinâmicas de Matemática" 
+                className="mx-auto w-full max-w-[280px] h-auto object-contain"
+              />
+            </div>
 
-              <div className="text-center mb-6 mt-4">
-                <p className="text-gray-500 text-sm" data-testid="text-offer-price-label-main">Plano Básico:</p>
-                <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 97,00</p>
-                <p className="text-6xl font-black text-brand-green mt-2 tracking-tighter" data-testid="text-offer-price-main">R$ 10,00</p>
-              </div>
+            <div className="text-center mb-6 mt-4">
+              <p className="text-gray-500 text-sm" data-testid="text-offer-price-label-main">De R$ 97,00 por apenas:</p>
+              <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 97,00</p>
+              <p className="text-6xl font-black text-brand-green mt-2 tracking-tighter" data-testid="text-offer-price-main">R$ 10,00</p>
+            </div>
 
-              <p className="text-center text-sm font-semibold text-gray-700 mb-6" data-testid="text-offer-access-intro-main">
-                Você recebe acesso imediato a:
-              </p>
+            <p className="text-center text-sm font-semibold text-gray-700 mb-6" data-testid="text-offer-access-intro-main">
+              Você recebe acesso imediato a:
+            </p>
 
-              <div className="space-y-4 mb-8 flex-grow">
-                {[
-                  "10 Painéis Decorativos (Prontos para Imprimir)",
-                  "Suporte Básico via E-mail",
-                  "Garantia de 7 Dias",
-                  "Acesso Imediato após a compra"
-                ].map((benefit, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="bg-brand-green rounded-full p-1.5 shrink-0 mt-0.5">
-                      <CheckCircle2 className="w-5 h-5 text-white" />
-                    </div>
-                    <span className="font-bold text-base text-left tracking-tight text-gray-900 leading-tight">{benefit}</span>
+            <div className="space-y-4 mb-8">
+              {[
+                "+150 Painéis Decorativos (Prontos para Imprimir)",
+                "Bônus 1: Cartazes de letras A até Z",
+                "Bônus 2: Cartazes de Numerais",
+                "Bônus 3: Sistema de Recompensas",
+                "Bônus 4: Etiquetas Editáveis para Nome",
+                "Bônus 5: Chamadinha Interativa",
+                "Suporte VIP 24/7",
+                "Garantia de 7 Dias",
+                "Acesso Imediato após a compra"
+              ].map((benefit, i) => (
+                <div key={i} className="flex items-start gap-3">
+                  <div className="bg-brand-green rounded-full p-1.5 shrink-0 mt-0.5">
+                    <CheckCircle2 className="w-5 h-5 text-white" />
                   </div>
-                ))}
-              </div>
-
-              <Button 
-                asChild
-                className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 mt-auto"
-              >
-                <a href="https://pay.wiapy.com/h9nvMOKemW" target="_blank" rel="noopener noreferrer">
-                  COMPRAR BÁSICO
-                </a>
-              </Button>
+                  <span className="font-bold text-base text-left tracking-tight text-gray-900 leading-tight">{benefit}</span>
+                </div>
+              ))}
             </div>
 
-            {/* Premium Offer Card - 27,00 */}
-            <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl w-full max-w-sm relative overflow-hidden transform md:scale-105 z-20 flex flex-col">
-              <div className="absolute top-4 right-4 bg-brand-green text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-bounce shadow-md">
-                MAIS VENDIDO
-              </div>
-              <div className="absolute top-0 inset-x-0 h-2 bg-brand-green"></div>
-              <div className="text-center mb-2 mt-2">
-                <img 
-                  src={premiumOfferLogo}
-                  alt="Logo Painéis Premium" 
-                  className="mx-auto w-full max-w-[280px] h-auto object-contain"
-                />
-              </div>
-
-              <div className="text-center mb-6 mt-4">
-                <p className="text-gray-500 text-sm" data-testid="text-offer-price-label-premium">De R$ 197,00 por apenas:</p>
-                <p className="text-gray-400 text-lg line-through decoration-red-500 decoration-2">R$ 197,00</p>
-                <p className="text-6xl font-black text-brand-green mt-2 tracking-tighter" data-testid="text-offer-price-premium">R$ 27,00</p>
-              </div>
-
-              <p className="text-center text-sm font-semibold text-gray-700 mb-6" data-testid="text-offer-access-intro-premium">
-                Você recebe acesso imediato a:
-              </p>
-
-              <div className="space-y-4 mb-8 flex-grow">
-                {[
-                  "+150 Painéis Decorativos (Prontos para Imprimir)",
-                  "Bônus 1: Cartazes de letras A até Z",
-                  "Bônus 2: Cartazes de Numerais",
-                  "Bônus 3: Sistema de Recompensas",
-                  "Bônus 4: Etiquetas Editáveis para Nome",
-                  "Bônus 5: Chamadinha Interativa",
-                  "Suporte VIP 24/7",
-                  "Garantia de 7 Dias",
-                  "Acesso Imediato após a compra"
-                ].map((benefit, i) => {
-                  const isBonus = benefit.startsWith("Bônus");
-                  return (
-                    <div key={i} className="flex items-start gap-3">
-                      <div className={`rounded-full p-1.5 shrink-0 mt-0.5 ${isBonus ? 'bg-yellow-400' : 'bg-brand-green'}`}>
-                        {isBonus ? (
-                          <Gift className="w-5 h-5 text-emerald-900" />
-                        ) : (
-                          <CheckCircle2 className="w-5 h-5 text-white" />
-                        )}
-                      </div>
-                      <span className="font-bold text-base text-left tracking-tight text-gray-900 leading-tight">{benefit}</span>
-                    </div>
-                  );
-                })}
-              </div>
-
-              <Button 
-                asChild
-                className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 mt-auto"
-              >
-                <a href="https://pay.wiapy.com/mtIG0alfu" target="_blank" rel="noopener noreferrer">
-                  QUERO COMPRAR AGORA
-                </a>
-              </Button>
-            </div>
+            <Button 
+              asChild
+              className="w-full bg-brand-green hover:bg-brand-green-hover text-white font-bold text-lg py-6 rounded-xl shadow-md transition-all flex items-center justify-center gap-2"
+            >
+              <a href="https://pay.wiapy.com/h9nvMOKemW" target="_blank" rel="noopener noreferrer">
+                QUERO COMPRAR AGORA
+              </a>
+            </Button>
           </div>
 
           {/* Email Delivery Banner */}
