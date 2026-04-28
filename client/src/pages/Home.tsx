@@ -60,7 +60,6 @@ import dynamicsImage15 from "@assets/15_1776468902535.png";
 import newOfferLogo from "@assets/5439FBF1-6AB6-45E4-994B-9B630889449C_1775774888310.png";
 import basicOfferLogo from "@assets/Sem_título_(1)_1776385358921.png";
 import apostilaImage from "@assets/download_1776385307013.png";
-import timerImage from "@assets/image_1777378294180.png";
 
 export default function Home() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
@@ -446,16 +445,9 @@ export default function Home() {
         </section>
 
         {/* Pricing Card */}
-        <section id="pricing-section" className="py-8 space-y-0">
-          <div className="max-w-[280px] sm:max-w-[320px] mx-auto relative z-20 mt-12 transform scale-105 rounded-[12px] overflow-hidden shadow-xl mb-4">
-             <img 
-              src={timerImage} 
-              alt="Oferta Especial Expira Em" 
-              className="w-full h-auto object-contain block"
-             />
-          </div>
+        <section id="pricing-section" className="py-8 space-y-8">
           {/* Main Offer Card - 10,00 */}
-          <div className="bg-white rounded-[24px] border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden transform scale-105 z-10">
+          <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden transform scale-105 z-10 mt-12">
             <div className="absolute top-4 right-4 bg-brand-green text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-bounce shadow-md">
               MAIS VENDIDO
             </div>
