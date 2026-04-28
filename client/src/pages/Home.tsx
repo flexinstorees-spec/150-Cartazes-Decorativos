@@ -216,7 +216,7 @@ export default function Home() {
           </div>
 
           <p className="text-gray-600 text-lg leading-relaxed mb-0 relative z-20 mt-6" data-testid="text-subheadline">
-            Material organizado por temas, personagens, animais e datas comemorativas. É só imprimir e usar.
+            Material organizado por <strong className="text-gray-900">temas, personagens, animais e datas comemorativas</strong>. É só imprimir e usar.
           </p>
 
           {/* Button below Image */}
