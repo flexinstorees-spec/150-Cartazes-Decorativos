@@ -24,6 +24,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { CountdownTimer } from "@/components/CountdownTimer";
 
 // Import stock images
 import heroBg from "@assets/stock_images/colorful_eva_foam_sh_59dfdb75.jpg";
@@ -445,9 +446,11 @@ export default function Home() {
         </section>
 
         {/* Pricing Card */}
-        <section id="pricing-section" className="py-8 space-y-8">
+        <section id="pricing-section" className="py-8 space-y-4">
+          <CountdownTimer />
+          
           {/* Main Offer Card - 10,00 */}
-          <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden transform scale-105 z-10 mt-12">
+          <div className="bg-white rounded-3xl border-2 border-brand-green p-6 shadow-xl max-w-sm mx-auto relative overflow-hidden transform scale-105 z-10 mt-8">
             <div className="absolute top-4 right-4 bg-brand-green text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider z-10 animate-bounce shadow-md">
               MAIS VENDIDO
             </div>
